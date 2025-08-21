@@ -94,22 +94,26 @@ nav ul li a:hover { color: #ff6b6b; }
 .section.light { background: #fff; }
 .section.dark { background: #f0f0f0; }
 
-/* About Section Layout */
-#about {
+/* About Section */
+.about-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 2rem;
   flex-wrap: wrap;
 }
-#about p {
-  flex: 1;
+.about-text {
+  flex: 2;
   font-size: 1.1rem;
   line-height: 1.6;
 }
-#about .section-img {
-  width: 200px;
-  height: 200px;
+.about-img {
+  flex: 1;
+  text-align: right;
+}
+.about-img img {
+  width: 180px;
+  height: 180px;
   border-radius: 50%;
   object-fit: cover;
   border: 3px solid #4a90e2;
@@ -145,21 +149,26 @@ nav ul li a:hover { color: #ff6b6b; }
 }
 .grid .card img:hover { transform: scale(1.05); }
 
-/* Skills Section (Classic Look) */
+/* Skills Section */
 .skills-list {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 1rem;
   list-style: none;
   padding: 0;
+  margin: 2rem 0 0 0;
 }
 .skills-list li {
   background: #fff;
   padding: 12px 16px;
   border-left: 4px solid #4a90e2;
   font-size: 1rem;
+  font-weight: 500;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
   border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
   transition: transform 0.2s;
 }
 .skills-list li:hover { transform: translateX(5px); }
