@@ -139,23 +139,50 @@ nav ul li a:hover {
 .edu-exp-card {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;   /* important: allows bullets to align correctly */
   background: #fff;
   padding: 15px 20px;
   margin: 10px 0;
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+
 .edu-left {
   font-size: 1rem;
   line-height: 1.5;
+  flex: 1; /* ensures left side expands properly */
 }
+
 .edu-right {
   font-size: 0.95rem;
   font-weight: 600;
   color: #4a90e2;
-  white-space: nowrap; /* prevents wrapping */
+  white-space: nowrap;
+  margin-left: 20px;
 }
+
+/* NEW: Experience details */
+.company {
+  font-style: italic;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.exp-details {
+  margin: 8px 0 0 18px;
+  padding: 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.exp-details li {
+  margin-bottom: 6px;
+  line-height: 1.4;
+}
+
+/* Dark Mode adjustments */
+body.dark-mode .exp-details { color: #ddd; }
+body.dark-mode .company { color: #aaa; }
 
 /* =========================
    PROJECTS GRID
