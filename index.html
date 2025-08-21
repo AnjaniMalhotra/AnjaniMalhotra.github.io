@@ -33,13 +33,15 @@
   <header class="hero">
     <img src="profile.jpeg" alt="Anjani Malhotra">
     <h2>Hello, I’m <span>Anjani Malhotra</span></h2>
-    <p>I’m a <span class="typing"></span></p>
+    <p><span class="typing"></span></p>
   </header>
 
   <!-- About -->
   <section id="about" class="section light" data-aos="fade-up">
-    <h3><i class="fa-solid fa-user"></i> About Me</h3>
-    <p>I’m a postgraduate student in Economics specializing in Data Analytics. Skilled in Python, SQL, R, Power BI, and econometrics, I enjoy combining analytical thinking with real-world problem-solving. My goal is to use data to power smarter business decisions.</p>
+    <div class="about-text">
+      <h3><i class="fa-solid fa-user"></i> About Me</h3>
+      <p>I’m a postgraduate student in Economics specializing in Data Analytics. Skilled in Python, SQL, R, Power BI, and econometrics, I enjoy combining analytical thinking with real-world problem-solving. My goal is to use data to power smarter business decisions.</p>
+    </div>
     <img src="profile.jpeg" alt="About Me Graphic" class="section-img">
   </section>
 
@@ -69,20 +71,20 @@
     </div>
   </section>
 
-  <!-- Projects with Thumbnails -->
+  <!-- Projects -->
   <section id="projects" class="section dark" data-aos="zoom-in">
     <h3><i class="fa-solid fa-lightbulb"></i> Academic Projects</h3>
     <div class="grid">
       <div class="card">
-        <img src="images/upi.png" alt="UPI Project">
+        <img src="images/upi.jpg" alt="UPI Project">
         <p>📊 Consumer Behaviour & UPI Adoption</p>
       </div>
       <div class="card">
-        <img src="images/ai-jobs.png" alt="AI Jobs">
+        <img src="images/ai-jobs.jpg" alt="AI Jobs">
         <p>🤖 Bibliometric Analysis of AI & Jobs</p>
       </div>
       <div class="card">
-        <img src="images/retail.png" alt="Retail">
+        <img src="images/retail.jpg" alt="Retail">
         <p>📈 E-commerce Impact on Retail</p>
       </div>
     </div>
@@ -131,16 +133,17 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    // Typing Animation
+    // Typing Animation (type once, stop)
     var typed = new Typed(".typing", {
-      strings: ["Economist", "Data Analyst", "Problem Solver", "Researcher"],
+      strings: ["Economist | Data Analyst | Researcher"],
       typeSpeed: 80,
-      backSpeed: 50,
-      loop: true
+      backSpeed: 0,
+      loop: false,
+      showCursor: false
     });
 
-    // Scroll Animations Init
-    AOS.init({ duration: 1000, once: true });
+    // Scroll Animations Init (run every time)
+    AOS.init({ duration: 1000, once: false });
 
     // Dark Mode Toggle
     const toggle = document.getElementById("darkToggle");
