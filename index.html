@@ -3,122 +3,48 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <style>
-    /* Color Scheme */
-    :root {
-      --primary: #4A90E2;  /* blue */
-      --secondary: #F5F7FA; /* light grey */
-      --text: #333;
-      --accent: #FF6B6B; /* coral */
-    }
-
-    body {
-      margin: 0;
-      font-family: "Poppins", sans-serif;
-      background: var(--secondary);
-      color: var(--text);
-    }
-
-    /* Navigation */
-    nav {
-      background: var(--primary);
-      padding: 1rem;
-      position: sticky;
-      top: 0;
-      display: flex;
-      justify-content: center;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      color: var(--accent);
-    }
-
-    /* Sections */
-    section {
-      padding: 80px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-
-    h1, h2 {
-      color: var(--primary);
-    }
-
-    /* Project Cards */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: white;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
-    }
-
-    .card:hover {
-      transform: translateY(-5px);
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: var(--primary);
-      color: white;
-    }
-  </style>
+  <title>L. Garcia | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   <!-- Navigation -->
   <nav>
-    <a href="#about">About</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
+    <h1>L. Garcia</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
   </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f" alt="Professional">
+    <h2>Success Story</h2>
+    <p>Dedicated professional with a proven track record of success across marketing, sales, and customer service. Thrives in dynamic environments, excels in communication, and adept at problem-solving.</p>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Contact Me</button>
+  </div>
 
   <!-- About Section -->
   <section id="about">
-    <h1>Hi, I'm Anjani 👋</h1>
-    <p>Welcome to my personal website!  
-    I'm passionate about data, economics, and building cool projects.  
-    This site showcases my work and journey.</p>
+    <h3>About Me</h3>
+    <p>I’m a passionate professional who combines business knowledge with technology to create impactful solutions. Skilled in economics, data analysis, and modern web tools.</p>
   </section>
 
   <!-- Projects Section -->
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="card">
-        <h3>📊 Data Dashboard</h3>
-        <p>A web app that visualizes financial and economic data interactively.</p>
-      </div>
-      <div class="card">
-        <h3>🤖 ML App</h3>
-        <p>A machine learning project with explainable AI (XAI) features.</p>
-      </div>
-      <div class="card">
-        <h3>📈 Research</h3>
-        <p>My dissertation on e-commerce impact on traditional retail.</p>
-      </div>
-    </div>
+    <h3>Projects</h3>
+    <ul>
+      <li>📊 Data Visualization Dashboard</li>
+      <li>🤖 AI-Powered Resume Analyzer</li>
+      <li>📈 Research on E-commerce Impact</li>
+    </ul>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2>Contact</h2>
+    <h3>Contact</h3>
     <p>Let’s connect! Reach out via:</p>
     <ul>
       <li>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></li>
@@ -129,7 +55,7 @@
 
   <!-- Footer -->
   <footer>
-    © 2025 Anjani Malhotra | Built with ❤ and GitHub Pages
+    © 2025 L. Garcia | Built with ❤ on GitHub Pages
   </footer>
 
 </body>
