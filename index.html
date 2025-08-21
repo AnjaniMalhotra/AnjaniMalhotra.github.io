@@ -3,70 +3,134 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Name - Data Analyst Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <title>My Portfolio</title>
+  <style>
+    /* Color Scheme */
+    :root {
+      --primary: #4A90E2;  /* blue */
+      --secondary: #F5F7FA; /* light grey */
+      --text: #333;
+      --accent: #FF6B6B; /* coral */
+    }
+
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background: var(--secondary);
+      color: var(--text);
+    }
+
+    /* Navigation */
+    nav {
+      background: var(--primary);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      display: flex;
+      justify-content: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+
+    h1, h2 {
+      color: var(--primary);
+    }
+
+    /* Project Cards */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: var(--primary);
+      color: white;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Your Name</h1>
-    <p>Data Analyst</p>
-    <nav>
-      <a href="#portfolio">Portfolio</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
 
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- About Section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hi, I'm <b>Your Name</b> – an aspiring data analyst passionate about learning and growing in analytics.<br>
-      Experienced with Excel, SQL, Power BI, and Python.
-    </p>
+    <h1>Hi, I'm Anjani 👋</h1>
+    <p>Welcome to my personal website!  
+    I'm passionate about data, economics, and building cool projects.  
+    This site showcases my work and journey.</p>
   </section>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <ul>
-      <li>SQL – 90%</li>
-      <li>Power BI – 95%</li>
-      <li>Python – 70%</li>
-      <li>Excel – 95%</li>
-    </ul>
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>📊 Data Dashboard</h3>
+        <p>A web app that visualizes financial and economic data interactively.</p>
+      </div>
+      <div class="card">
+        <h3>🤖 ML App</h3>
+        <p>A machine learning project with explainable AI (XAI) features.</p>
+      </div>
+      <div class="card">
+        <h3>📈 Research</h3>
+        <p>My dissertation on e-commerce impact on traditional retail.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="portfolio">
-    <h2>Portfolio</h2>
-    <ul>
-      <li><b>Store Sales - Time Series Forecasting</b>: Used time series techniques to predict store sales.</li>
-      <li><b>Customer Mall Segmentation</b>: Clustered mall customers using Python.</li>
-      <li><b>NYPD Arrest Data (2022)</b>: Analyzed enforcement trends using public policing data.</li>
-      <li><b>Supermarket Sales Dashboard</b>: Built interactive dashboard in Power BI.</li>
-      <li><b>Olist eCommerce Analysis</b>: Explored Brazil e-commerce data and trends.</li>
-    </ul>
-  </section>
-
-  <section id="achievements">
-    <h2>Achievements & Certifications</h2>
-    <ul>
-      <li>Microsoft Certified: Power Platform Fundamentals</li>
-      <li>Advanced Data Analytics, Bayan Academy & J.P. Morgan</li>
-      <li>Refocus Data Analytics Core Track</li>
-      <li>Power BI in Data Analytics (PwC Switzerland)</li>
-      <li>Career Essentials in Data Analysis (Microsoft and LinkedIn)</li>
-      <li>Google Data Analytics Certificate</li>
-    </ul>
-  </section>
-
+  <!-- Contact Section -->
   <section id="contact">
     <h2>Contact</h2>
-    <p>Email: youremail@example.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/yourprofile" target="_blank">@yourprofile</a></p>
-    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">@yourusername</a></p>
+    <p>Let’s connect! Reach out via:</p>
+    <ul>
+      <li>Email: <a href="mailto:yourname@email.com">yourname@email.com</a></li>
+      <li>GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a></li>
+      <li>LinkedIn: <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a></li>
+    </ul>
   </section>
 
+  <!-- Footer -->
   <footer>
-    <p>© 2025 Your Name. All rights reserved.</p>
+    © 2025 Anjani Malhotra | Built with ❤ and GitHub Pages
   </footer>
+
 </body>
 </html>
