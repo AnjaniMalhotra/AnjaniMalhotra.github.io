@@ -22,6 +22,9 @@ body {
   background-color: var(--bg-light);
   color: var(--text-light);
   line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 body.dark-mode {
@@ -209,6 +212,7 @@ body.dark-mode .edu-exp-card {
   overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.3s;
+  text-align: center;
 }
 
 .card img {
@@ -219,8 +223,19 @@ body.dark-mode .edu-exp-card {
 
 .card p {
   padding: 1rem;
-  text-align: center;
   font-weight: 500;
+}
+
+.card a {
+  display: inline-block;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  color: var(--primary);
+  transition: color 0.3s;
+}
+
+.card a:hover {
+  color: var(--secondary);
 }
 
 .card:hover {
@@ -267,8 +282,16 @@ body.dark-mode .skills-list li {
    FOOTER
 ========================= */
 footer {
+  margin-top: auto;
   text-align: center;
   padding: 1.5rem 0;
   font-size: 0.9rem;
   color: #777;
+  background: var(--card-bg-light);
+  box-shadow: var(--shadow);
+}
+
+body.dark-mode footer {
+  background: var(--card-bg-dark);
+  color: var(--text-dark);
 }
