@@ -34,12 +34,7 @@
     <div class="about-container">
       <div class="about-text">
         <h3><i class="fa-solid fa-user"></i> About Me</h3>
-        <p>
-          I am a postgraduate student in Economics with a specialization in Data Analytics. 
-          Proficient in Python, SQL, R, Power BI, and econometrics, I enjoy transforming complex datasets into clear insights 
-          that support strategic decision-making. 
-          I am passionate about combining analytical expertise with real-world applications to drive impactful outcomes.
-        </p>
+        <p>I am a postgraduate student in Economics with a specialization in Data Analytics. Proficient in Python, SQL, R, Power BI, and econometrics, I enjoy transforming complex datasets into clear insights that support strategic decision-making.</p>
       </div>
       <div class="about-img" data-aos="fade-left">
         <img src="profile.jpeg" alt="About Me Graphic">
@@ -74,25 +69,14 @@
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    // Typewriter effect
-    new Typed(".typing", {
-      strings: ["Economist | Data Analyst | Researcher"],
-      typeSpeed: 80,
-      backSpeed: 0,
-      loop: false,
-      showCursor: false
-    });
-
-    // AOS animation
+    new Typed(".typing", { strings: ["Economist | Data Analyst | Researcher"], typeSpeed: 80, showCursor: false });
     AOS.init({ duration: 1000, once: false });
 
-    // Dark mode toggle
     const toggle = document.getElementById("darkToggle");
     toggle.addEventListener("click", () => {
       document.body.classList.toggle("dark-mode");
       toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
     });
   </script>
-
 </body>
 </html>
