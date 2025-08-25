@@ -85,53 +85,119 @@ nav ul li a:hover {
 }
 
 /* =========================
-   HERO + ABOUT COMBINED
+   HERO SECTION
 ========================= */
-.hero-about {
-  padding: 3rem 5%;
-  max-width: 1100px;
+.hero-section {
+  padding: 4rem 5%;
+  max-width: 1200px;
   margin: auto;
 }
 
-.hero-about-container {
+.hero-container {
   display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 2.5rem;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
   align-items: center;
 }
 
-.hero-about-img img {
-  width: 280px;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 50%;
+/* PROFILE CARD */
+.profile-card {
+  background-color: #f5f0e6; /* beige */
+  padding: 2rem 1.5rem;
+  border-radius: var(--radius);
+  text-align: center;
   box-shadow: var(--shadow);
-  justify-self: center;
 }
 
-.hero-about-text h2 {
-  font-size: 2rem;
+.profile-card img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.profile-card h2 {
+  margin: 0.5rem 0 0.3rem 0;
+  font-family: var(--font-heading);
+  color: var(--primary);
+}
+
+.profile-card p {
+  margin: 0.3rem 0 1rem 0;
+  font-weight: 500;
+}
+
+.profile-card .socials a {
+  margin: 0 0.5rem;
+  font-size: 1.2rem;
+  color: var(--text-light);
+  transition: color 0.3s;
+}
+
+.profile-card .socials a:hover {
+  color: var(--primary);
+}
+
+/* HERO TEXT */
+.hero-text h1 {
+  font-size: 2.2rem;
   margin-bottom: 0.5rem;
 }
 
-.hero-about-text span {
+.hero-text span {
   color: var(--primary);
   font-weight: 600;
 }
 
-.hero-about-text p {
+.hero-text .subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.hero-buttons {
+  margin-bottom: 1.5rem;
+}
+
+.hero-buttons .btn {
+  background-color: var(--primary);
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border-radius: var(--radius);
+  margin-right: 1rem;
+  font-weight: 500;
+  transition: transform 0.2s, background-color 0.3s;
+  text-decoration: none;
+}
+
+.hero-buttons .btn:hover {
+  transform: translateY(-3px);
+  background-color: #357ABD;
+}
+
+.hero-buttons .btn-secondary {
+  background-color: var(--secondary);
+}
+
+.hero-buttons .btn-secondary:hover {
+  background-color: #e65b50;
+}
+
+.hero-bio {
   font-size: 1.1rem;
-  margin-top: 0.5rem;
+  line-height: 1.6;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  .hero-about-container {
+  .hero-container {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .hero-about-img img {
-    margin-bottom: 1.5rem;
+  .hero-buttons .btn {
+    margin-bottom: 0.8rem;
+    display: inline-block;
   }
 }
 
