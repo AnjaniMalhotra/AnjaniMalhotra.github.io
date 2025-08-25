@@ -8,11 +8,12 @@
   --text-dark: #eeeeee;
   --primary: #4a90e2;
   --secondary: #ff6f61;
-  --card-bg-light: #f7f7f7;
+  --card-bg-light: #fdfdfd;
   --card-bg-dark: #1e1e1e;
-  --radius: 12px;
-  --shadow: 0 4px 12px rgba(0,0,0,0.1);
+  --radius: 10px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.08);
   --font-main: 'Poppins', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
 }
 
 body {
@@ -23,85 +24,97 @@ body {
   line-height: 1.6;
 }
 
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: var(--bg-dark);
-    color: var(--text-dark);
-  }
+body.dark-mode {
+  background-color: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* =========================
-   Layout
+   NAVIGATION
 ========================= */
-.container {
-  width: 90%;
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 2rem 0;
-}
-
-/* =========================
-   Header
-========================= */
-header {
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 0.8rem 5%;
+  background: var(--card-bg-light);
+  box-shadow: var(--shadow);
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-header h1 {
-  font-size: 1.8rem;
-  margin: 0;
-}
-
-nav a {
-  margin-left: 1.5rem;
-  text-decoration: none;
+nav h1 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
   color: var(--primary);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
   font-weight: 500;
+  color: var(--text-light);
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--primary);
+}
+
+#darkToggle {
+  border: none;
+  background: none;
+  font-size: 1.2rem;
+  cursor: pointer;
 }
 
 /* =========================
-   Hero Section
+   HERO
 ========================= */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 2rem;
   align-items: center;
-  padding: 3rem 0;
+  padding: 3rem 5%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.hero img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: var(--shadow);
+  justify-self: center;
 }
 
 .hero h2 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero span {
+  color: var(--primary);
+  font-weight: 600;
 }
 
 .hero p {
   font-size: 1.1rem;
-  margin-bottom: 1.5rem;
-}
-
-.hero button {
-  background: var(--primary);
-  color: #fff;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  border-radius: var(--radius);
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.hero button:hover {
-  background: var(--secondary);
-}
-
-.hero img {
-  width: 100%;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  margin-top: 0.5rem;
 }
 
 @media (max-width: 768px) {
@@ -109,58 +122,153 @@ nav a {
     grid-template-columns: 1fr;
     text-align: center;
   }
+  .hero img {
+    margin-bottom: 1rem;
+  }
 }
 
 /* =========================
-   Projects Section
+   SECTION BASE
 ========================= */
-.projects {
-  margin: 3rem 0;
+.section {
+  padding: 3rem 5%;
+  max-width: 1100px;
+  margin: auto;
 }
 
-.projects h3 {
+.section h3 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
   text-align: center;
-  font-size: 1.8rem;
-  margin-bottom: 2rem;
 }
 
-.project-grid {
+/* =========================
+   ABOUT
+========================= */
+.about-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: 1.5fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.about-container img {
+  width: 240px;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+@media (max-width: 768px) {
+  .about-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
+
+/* =========================
+   EDUCATION / EXPERIENCE
+========================= */
+.edu-exp-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: var(--card-bg-light);
+  padding: 1rem 1.2rem;
+  margin-bottom: 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+body.dark-mode .edu-exp-card {
+  background: var(--card-bg-dark);
+}
+
+.edu-left {
+  max-width: 70%;
+}
+
+.edu-right {
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
 
-.project-card {
+.card {
   background: var(--card-bg-light);
-  padding: 1.5rem;
   border-radius: var(--radius);
+  overflow: hidden;
   box-shadow: var(--shadow);
   transition: transform 0.3s;
 }
 
-@media (prefers-color-scheme: dark) {
-  .project-card {
-    background: var(--card-bg-dark);
-  }
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+.card p {
+  padding: 1rem;
+  text-align: center;
+  font-weight: 500;
 }
 
-.project-card h4 {
-  margin-top: 0;
-  font-size: 1.3rem;
-  color: var(--primary);
+.card:hover {
+  transform: translateY(-6px);
+}
+
+body.dark-mode .card {
+  background: var(--card-bg-dark);
 }
 
 /* =========================
-   Footer
+   SKILLS
+========================= */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  background: var(--card-bg-light);
+  padding: 0.6rem 1rem;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: transform 0.3s;
+}
+
+.skills-list li:hover {
+  transform: scale(1.05);
+}
+
+body.dark-mode .skills-list li {
+  background: var(--card-bg-dark);
+}
+
+/* =========================
+   FOOTER
 ========================= */
 footer {
   text-align: center;
   padding: 1.5rem 0;
-  margin-top: 3rem;
   font-size: 0.9rem;
   color: #777;
 }
