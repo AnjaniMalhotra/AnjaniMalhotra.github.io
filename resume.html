@@ -1,36 +1,110 @@
-<section id="education" class="section">
-  <h3>Education</h3>
-  <div class="edu-exp-card">
-    <div class="edu-left">
-      <b>M.Sc. Economics (Data Analytics)</b><br>Symbiosis School of Economics, Pune
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anjani Malhotra | Resume</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <h1>Anjani Malhotra</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="resume.html">Resume</a></li>
+      <li><a href="projects.html">Projects</a></li>
+    </ul>
+    <button id="darkToggle">🌙</button>
+  </nav>
+
+  <!-- EDUCATION -->
+  <section id="education" class="section" data-aos="fade-up">
+    <h3><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+    <div class="edu-exp-card">
+      <div class="edu-left"><b>M.Sc. Economics (Data Analytics)</b><br>Symbiosis School of Economics, Pune</div>
+      <div class="edu-right">Expected 2026</div>
     </div>
-    <div class="edu-right">Expected 2026</div>
-  </div>
-  <!-- Add more education cards here -->
-</section>
+    <div class="edu-exp-card">
+      <div class="edu-left"><b>B.A. Economics & English</b><br>University of Delhi, Delhi<br><span class="edu-sub">CGPA: 7.4</span></div>
+      <div class="edu-right">2023</div>
+    </div>
+  </section>
 
-<section id="skills" class="section">
-  <h3>Skills</h3>
-  <ul class="skills-list">
-    <li>Python</li>
-    <li>SQL</li>
-    <li>R</li>
-    <li>Power BI</li>
-    <li>Excel</li>
-    <li>Econometrics</li>
-  </ul>
-</section>
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section" data-aos="fade-left">
+    <h3><i class="fa-solid fa-briefcase"></i> Experience</h3>
+    <div class="edu-exp-card">
+      <div class="edu-left">
+        <b>Financial Analyst Intern</b><br><span class="company">Margin Sentiment Advisory</span>
+        <ul class="exp-details">
+          <li>Analyzed stock market trends and IPO performance to support investment strategies.</li>
+          <li>Prepared financial research reports and client presentations.</li>
+        </ul>
+      </div>
+      <div class="edu-right">Feb – Apr 2024</div>
+    </div>
+    <div class="edu-exp-card">
+      <div class="edu-left">
+        <b>Data Analyst Intern</b><br><span class="company">Edulyt India</span>
+        <ul class="exp-details">
+          <li>Developed interactive dashboards in Power BI.</li>
+          <li>Used Python for customer segmentation and insights.</li>
+        </ul>
+      </div>
+      <div class="edu-right">May – Jul 2025</div>
+    </div>
+  </section>
 
-<section id="certifications" class="section">
-  <h3>Certifications</h3>
-  <ul>
-    <li>Social Media Data Analytics – Univ. of Washington</li>
-    <li>Applied Text Mining in Python – Univ. of Michigan</li>
-    <li>Intro & Intermediate SQL – DataCamp</li>
-  </ul>
-</section>
+  <!-- SKILLS -->
+  <section id="skills" class="section" data-aos="fade-up">
+    <h3><i class="fa-solid fa-code"></i> Skills</h3>
+    <ul class="skills-list">
+      <li><i class="fa-brands fa-python"></i> Python</li>
+      <li><i class="fa-solid fa-database"></i> SQL</li>
+      <li><i class="fa-brands fa-r-project"></i> R</li>
+      <li><i class="fa-solid fa-chart-line"></i> Power BI</li>
+      <li><i class="fa-solid fa-file-excel"></i> Excel</li>
+      <li><i class="fa-solid fa-chart-line"></i> Econometrics</li>
+    </ul>
+  </section>
 
-<section id="projects-summary" class="section">
-  <h3>Projects Summary</h3>
-  <p>For full project details, visit the <a href="projects.html">Projects Page</a>.</p>
-</section>
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section" data-aos="fade-up">
+    <h3><i class="fa-solid fa-certificate"></i> Certifications</h3>
+    <ul>
+      <li>Social Media Data Analytics – Univ. of Washington (Coursera, 2025)</li>
+      <li>Applied Text Mining in Python – Univ. of Michigan (Coursera, 2025)</li>
+      <li>Intro & Intermediate SQL – DataCamp (2025)</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>📍 Pune, India</p>
+    <p>📧 <a href="mailto:anjani.malhotra.2024@sse.ac.in">anjani.malhotra.2024@sse.ac.in</a></p>
+    <p>
+      <a href="https://github.com/AnjaniMalhotra"><i class="fa-brands fa-github"></i> GitHub</a> |
+      <a href="https://www.linkedin.com/in/anjani-malhotra"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+    </p>
+    <p>© 2025 Anjani Malhotra | Built with ❤</p>
+  </footer>
+
+  <!-- SCRIPTS -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    new Typed(".typing", { strings: ["Economist | Data Analyst | Researcher"], typeSpeed: 80, showCursor: false });
+    AOS.init({ duration: 1000, once: false });
+    const toggle = document.getElementById("darkToggle");
+    toggle.addEventListener("click", () => {
+      document.body.classList.toggle("dark-mode");
+      toggle.textContent = document.body.classList.contains("dark-mode") ? "☀️" : "🌙";
+    });
+  </script>
+</body>
+</html>
