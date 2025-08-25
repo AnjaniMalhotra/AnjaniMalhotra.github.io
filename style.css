@@ -22,9 +22,6 @@ body {
   background-color: var(--bg-light);
   color: var(--text-light);
   line-height: 1.6;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
 }
 
 body.dark-mode {
@@ -50,6 +47,10 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
+}
+
+body.dark-mode nav {
+  background: var(--card-bg-dark);
 }
 
 nav h1 {
@@ -84,11 +85,11 @@ nav ul li a:hover {
 }
 
 /* =========================
-   HERO
+   HERO + ABOUT MERGED
 ========================= */
 .hero {
   display: grid;
-  grid-template-columns: 1fr 1.2fr;
+  grid-template-columns: 1.2fr 1.5fr;
   gap: 2rem;
   align-items: center;
   padding: 3rem 5%;
@@ -96,37 +97,47 @@ nav ul li a:hover {
   margin: auto;
 }
 
-.hero img {
+.hero .about-img {
+  justify-self: center;
+}
+
+.hero .about-img img {
   width: 280px;
   height: 280px;
   object-fit: cover;
   border-radius: 50%;
   box-shadow: var(--shadow);
-  justify-self: center;
 }
 
-.hero h2 {
+.hero .about-text h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
 }
 
-.hero span {
+.hero .about-text span {
   color: var(--primary);
   font-weight: 600;
 }
 
-.hero p {
+.hero .about-text p {
   font-size: 1.1rem;
   margin-top: 0.5rem;
+  line-height: 1.6;
 }
 
+/* Responsive adjustments */
 @media (max-width: 768px) {
   .hero {
     grid-template-columns: 1fr;
     text-align: center;
   }
-  .hero img {
-    margin-bottom: 1rem;
+
+  .hero .about-img {
+    margin-bottom: 1.5rem;
+  }
+
+  .hero .about-text h2 {
+    font-size: 1.8rem;
   }
 }
 
@@ -145,29 +156,6 @@ nav ul li a:hover {
   margin-bottom: 1.5rem;
   color: var(--primary);
   text-align: center;
-}
-
-/* =========================
-   ABOUT
-========================= */
-.about-container {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 2rem;
-  align-items: center;
-}
-
-.about-container img {
-  width: 240px;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-}
-
-@media (max-width: 768px) {
-  .about-container {
-    grid-template-columns: 1fr;
-    text-align: center;
-  }
 }
 
 /* =========================
@@ -197,8 +185,17 @@ body.dark-mode .edu-exp-card {
   color: var(--secondary);
 }
 
+.exp-details {
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.exp-details li {
+  margin-bottom: 0.3rem;
+}
+
 /* =========================
-   PROJECTS
+   PROJECTS / CARDS
 ========================= */
 .grid {
   display: grid;
@@ -229,13 +226,8 @@ body.dark-mode .edu-exp-card {
 .card a {
   display: inline-block;
   margin-bottom: 1rem;
-  font-weight: 500;
   color: var(--primary);
-  transition: color 0.3s;
-}
-
-.card a:hover {
-  color: var(--secondary);
+  font-weight: 600;
 }
 
 .card:hover {
@@ -282,16 +274,23 @@ body.dark-mode .skills-list li {
    FOOTER
 ========================= */
 footer {
-  margin-top: auto;
   text-align: center;
   padding: 1.5rem 0;
   font-size: 0.9rem;
   color: #777;
-  background: var(--card-bg-light);
-  box-shadow: var(--shadow);
+  margin-top: 2rem;
 }
 
 body.dark-mode footer {
-  background: var(--card-bg-dark);
   color: var(--text-dark);
+}
+
+/* =========================
+   MEDIA QUERIES GENERAL
+========================= */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
 }
