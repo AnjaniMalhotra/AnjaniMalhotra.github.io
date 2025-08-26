@@ -22,6 +22,7 @@ body {
   background-color: var(--bg-light);
   color: var(--text-light);
   line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode {
@@ -95,7 +96,7 @@ nav ul li a:hover {
 
 .hero-container {
   display: grid;
-  grid-template-columns: minmax(240px, 280px) 1fr; /* left capped */
+  grid-template-columns: minmax(240px, 280px) 1fr;
   gap: 3rem;
   align-items: center;
 }
@@ -107,10 +108,10 @@ nav ul li a:hover {
 }
 
 .hero-img {
-  width: 200px;
+  width: 220px;
   height: auto;
   object-fit: cover;
-  border-radius: 10px;
+  border-radius: 10px; /* rectangular, not circular */
 }
 
 /* Right: Hero Text */
@@ -175,11 +176,13 @@ nav ul li a:hover {
   }
   .hero-img {
     width: 150px;
-    height: 150px;
+    height: auto;
   }
   .hero-buttons .btn {
     margin-bottom: 0.8rem;
     display: inline-block;
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -243,6 +246,7 @@ body.dark-mode .edu-exp-card {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
+  justify-items: center; /* center cards, no end-to-end stretch */
 }
 
 .card {
@@ -252,6 +256,8 @@ body.dark-mode .edu-exp-card {
   box-shadow: var(--shadow);
   transition: transform 0.3s;
   text-align: center;
+  max-width: 280px; /* ensures card doesn’t stretch too wide */
+  width: 100%;
 }
 
 .card img {
