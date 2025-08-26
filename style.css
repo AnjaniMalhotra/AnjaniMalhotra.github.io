@@ -100,57 +100,33 @@ nav ul li a:hover {
   align-items: center;
 }
 
-/* PROFILE CARD */
-.profile-card {
-  background-color: #f5f0e6; /* beige */
-  padding: 2rem 1.5rem;
-  border-radius: var(--radius);
-  text-align: center;
+/* Left: Profile Image */
+.hero-left {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #ddd;
   box-shadow: var(--shadow);
 }
 
-.profile-card img {
-  width: 180px;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-}
-
-.profile-card h2 {
-  margin: 0.5rem 0 0.3rem 0;
-  font-family: var(--font-heading);
-  color: var(--primary);
-}
-
-.profile-card p {
-  margin: 0.3rem 0 1rem 0;
-  font-weight: 500;
-}
-
-.profile-card .socials a {
-  margin: 0 0.5rem;
-  font-size: 1.2rem;
-  color: var(--text-light);
-  transition: color 0.3s;
-}
-
-.profile-card .socials a:hover {
-  color: var(--primary);
-}
-
-/* HERO TEXT */
-.hero-text h1 {
+/* Right: Hero Text */
+.hero-right h1 {
   font-size: 2.2rem;
   margin-bottom: 0.5rem;
 }
 
-.hero-text span {
+.hero-right span {
   color: var(--primary);
   font-weight: 600;
 }
 
-.hero-text .subtitle {
+.hero-right .subtitle {
   font-size: 1.2rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -187,6 +163,7 @@ nav ul li a:hover {
 .hero-bio {
   font-size: 1.1rem;
   line-height: 1.6;
+  color: var(--text-light);
 }
 
 /* Responsive */
@@ -195,6 +172,11 @@ nav ul li a:hover {
     grid-template-columns: 1fr;
     text-align: center;
   }
+  
+  .hero-left {
+    margin-bottom: 2rem;
+  }
+
   .hero-buttons .btn {
     margin-bottom: 0.8rem;
     display: inline-block;
