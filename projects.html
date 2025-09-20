@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Projects - Anjani Malhotra</title>
+</head>
+<body>
+  <div class="container">
+    <!-- LEFT PANEL -->
+    <aside class="left-panel">
+      <img src="profile.jpeg" alt="Anjani Malhotra" class="avatar">
+      <h2 class="name">Anjani Malhotra</h2>
+      <hr>
+      <p class="title">Economist | Data Analyst</p>
+      <div class="social-icons">
+        <a href="https://www.linkedin.com/in/anjani-malhotra" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/AnjaniMalhotra" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="mailto:anjanimalhotra09@gmail.com"><i class="fas fa-envelope"></i></a>
+      </div>
+      <p class="location">Based in Pune, India</p>
+    </aside>
+
+    <!-- RIGHT PANEL -->
+    <main class="right-panel">
+      <!-- NAVBAR INSIDE RIGHT PANEL -->
+      <header class="navbar">
+        <ul>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html" class="active">Projects</a></li>
+        </ul>
+      </header>
+
+      <section class="projects">
+        <h1>Projects</h1>
+        <p class="intro">
+          Here are some of my featured projects, showcasing my skills in data analytics, visualization, and applied economics.
+        </p>
+      
+        <!-- Project 1 -->
+        <div class="project-card">
+          <div class="project-text">
+            <h2>Global Cities, Countries & Languages Analysis</h2>
+            <h3>ANALYSIS PROJECT</h3>
+            <p>
+              Analyzed global demographics, urbanization, and language diversity using datasets. 
+              Demonstrated skills in Pandas, Matplotlib, Seaborn, and data storytelling. 
+              Provided insights on population, economy, urbanization, and multilingualism.
+            </p>
+            <p> </p>
+            <a href="https://github.com/AnjaniMalhotra/Global-Demographics-and-Linguistic-Diversity" target="_blank" class="btn secondary">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-image">
+            <img src="global cities.png" alt="Global Demographics Project">
+          </div>
+        </div>
+      
+        <!-- Project 2 -->
+        <div class="project-card reverse">
+          <div class="project-text">
+            <h2>Maximizing Taxi Revenue through Payment Type Analysis</h2>
+            <h3>ANALYSIS PROJECT</h3>
+            <p>
+              Examined how payment methods (Card vs Cash) affect NYC Yellow Taxi fares using data cleaning, analysis, and Welch’s t-test. 
+              Found higher average fares with card payments, recommending drivers promote card use.
+            </p>
+            <a href="https://github.com/AnjaniMalhotra/Maximising-Taxi-Revenue-Project" target="_blank" class="btn secondary">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-image">
+            <img src="taxi_revenue.jpg" alt="Taxi Revenue Analysis Project">
+          </div>
+        </div>
+      
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-text">
+            <h2>Consumer Behaviour & UPI Adoption</h2>
+            <h3>ACADEMIC PROJECT</h3>
+            <p>
+              Analyzed consumer adoption of UPI payment systems using survey data. Conducted statistical analysis to identify key behavioral and demographic drivers of adoption.
+            </p>
+          </div>
+          <div class="project-image">
+            <img src="upi_project.jpg" alt="UPI Adoption Project">
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card reverse">
+          <div class="project-text">
+            <h2>A Bibliometric Analysis of the Implications of AI on the Job Market</h2>
+            <h3>ACADEMIC PROJECT</h3>
+            <p>
+              Used Biblioshiny to analyze and visualize research trends on AI’s impact on employment, identifying key authors, journals, and emerging themes.
+            </p>
+          </div>
+          <div class="project-image">
+            <img src="ai_job_market.jpg" alt="AI Job Market Bibliometric Analysis">
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-text">
+            <h2>Payman Dev Challenge - Auto Inventory Restock Agent</h2>
+            <h3>AI / ML PROJECT</h3>
+            <p>
+              Streamlit-based smart inventory agent that automatically checks low-stock items, calculates required quantities, creates payees, sends test payments using <strong>Payman.ai</strong>, and logs transactions.
+            </p>
+            <a href="https://auto-restock-agent.streamlit.app/" target="_blank" class="btn secondary">
+              <i class="fas fa-external-link-alt"></i> Live App
+            </a>
+            <a href="https://github.com/yourusername/auto-restock-agent" target="_blank" class="btn secondary">
+              <i class="fab fa-github"></i> View on GitHub
+            </a>
+          </div>
+          <div class="project-image">
+            <img src="auto_restock.jpg" alt="Auto Inventory Restock Project">
+          </div>
+        </div>
+
+      </section>
+              
+      <footer class="footer">
+        <div class="footer-info">
+          <p>Thank you for visiting my portfolio. Feel free to explore my projects and get in touch!</p>
+          <p>&copy; 2025 Anjani Malhotra</p>
+        </div>
+      </footer>
+      
+    </main>
+  </div>
+</body>
+</html>
