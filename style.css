@@ -153,9 +153,169 @@ ul {
   flex-direction: column;
 }
 
+.page-title {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 3.5rem;   /* Same margin for all pages */
+  margin-bottom: 2rem;
+  color: #333;
+}
+
+/* ========================= ABOUT PAGE FIXES ========================= */
+ /* Hero Section */ 
+.hero { 
+   max-width: 900px;
+   margin: 0 auto; 
+   text-align: left; /* changed from center */ 
+  } 
+
+.hero h1 {
+  font-size: 2rem; 
+  margin-top: 3rem; 
+  margin-bottom: 0.75rem;
+  font-weight: 700; 
+  color: #333; 
+} 
+
+.hero h3 { 
+  font-weight: 400; 
+  color: #4a5568; 
+  font-size: 1.3rem; 
+  margin-bottom: 2rem; 
+} 
+
+.intro { 
+  font-size: 1.1rem; 
+  max-width: 800px; 
+  margin: 0 0 2.5rem 0; /* left aligned like resume/projects */ 
+  line-height: 1.8; 
+  text-align: left; 
+} 
+/* Quick Facts Grid */ 
+.quick-facts { 
+  display: grid; 
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); 
+  gap: 1.5rem; 
+  margin: 3rem 0; 
+} 
+
+.quick-facts div { 
+  background: var(--card-bg-light); 
+  padding: 1.5rem; 
+  border-radius: var(--radius); 
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
+  font-size: 1rem; 
+  font-weight: 500; 
+  display: flex; 
+  align-items: center; 
+  gap: 0.75rem; 
+  transition: all 0.3s ease; 
+  text-align: left; /* ensure content inside is left aligned */ 
+} 
+
+.quick-facts div:hover { 
+  background: #b4815a; 
+  color: #fff; 
+  transform: translateY(-5px); 
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15); 
+}
+
 /* =========================
-   PROJECTS SECTION
+   BUTTON STYLES
 ========================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 1.0rem;
+  border-radius: var(--radius);
+  font-weight: 500;
+  font-size: 0.95rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* Primary button */
+.btn.primary {
+  background-color: var(--primary);
+  color: #fff;
+  border: none;
+}
+
+.btn.primary:hover {
+  background-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Secondary button */
+.btn.secondary {
+  background-color: var(--secondary);
+  color: #fff;
+  border: none;
+}
+
+.btn.secondary:hover {
+  background-color: #7a4f2c;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   RESUME & PROJECTS
+========================= */
+.resume-heading {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.resume-section {
+  margin-top: 3rem;
+}
+
+.resume-card {
+  display: flex;
+  gap: 2rem;
+  background: var(--card-bg-light);
+  padding: 1.5rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  margin-bottom: 2rem;
+}
+
+.resume-left {
+  flex: 1;
+  min-width: 200px;
+}
+
+.resume-left .date {
+  font-weight: bold;
+  color: var(--secondary);
+}
+
+.resume-left h3 {
+  margin: 0.3rem 0;
+}
+
+.resume-left .company {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.resume-right {
+  flex: 2;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.skills-list {
+  list-style: disc;
+  padding-left: 1.5rem;
+  line-height: 1.8;
+}
+
 .projects h1 {
   text-align: left;
   font-size: 2rem;
@@ -167,20 +327,24 @@ ul {
 
 .project-card {
   display: flex;
-  flex-direction: column; /* changed to single column layout */
-  align-items: flex-start;
+  align-items: center;
+  justify-content: space-between;
   background: var(--card-bg-light);
   border-radius: var(--radius);
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   margin-bottom: 2rem;
   padding: 1.5rem;
-  gap: 1rem; /* smaller gap since images are removed */
+  gap: 2rem;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.project-card.reverse {
+  flex-direction: row-reverse;
 }
 
 .project-text h2 {
@@ -202,35 +366,10 @@ ul {
   color: var(--text-light);
 }
 
-/* Hide image sections entirely */
-.project-image {
-  display: none;
-}
-
-/* =========================
-   BUTTON STYLES
-========================= */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5rem;
-  padding: 0.4rem 1rem;
+.project-image img {
+  max-width: 100%;
   border-radius: var(--radius);
-  font-weight: 500;
-  font-size: 0.95rem;
-  text-decoration: none;
-  transition: all 0.3s ease;
-  cursor: pointer;
-}
-
-.btn.secondary {
-  background-color: var(--secondary);
-  color: #fff;
-}
-
-.btn.secondary:hover {
-  background-color: #7a4f2c;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 /* FOOTER */
@@ -238,4 +377,49 @@ ul {
   margin-top: 4rem;
   padding-top: 2rem;
   border-top: 1px solid #ddd;
-  text-align: center
+  display: flex;
+  justify-content: center;  /* Center horizontally */
+  align-items: center;      /* Center vertically */
+  text-align: center;       /* Align text in center */
+}
+
+.footer-info p {
+  margin: 0.2rem 0;
+  font-size: 0.9rem;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-panel {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    padding: 2rem 1rem;
+  }
+  .right-panel {
+    margin-left: 0;
+    width: 100%;
+    padding: 2rem 1.5rem;
+  }
+  .resume-card,
+  .project-card {
+    flex-direction: column;
+  }
+  .project-card.reverse {
+    flex-direction: column;
+  }
+}
+@media (max-width: 768px) {
+  .projects h1,
+  .resume-heading h1 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .resume-section h2 {
+    font-size: 1.2rem;
+  }
+}
