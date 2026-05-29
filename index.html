@@ -16,13 +16,10 @@
 </head>
 <body>
 
-  <!-- Technical Grid Canvas Background -->
-  <canvas id="bg-canvas"></canvas>
-
   <!-- Clean Editorial Navbar -->
   <nav class="navbar-container">
     <a href="index.html" class="nav-brand">
-      ANJANI MALHOTRA <span>AI</span>
+      ANJANI MALHOTRA
     </a>
     
     <div class="nav-links">
@@ -40,38 +37,29 @@
   </nav>
 
   <!-- ==========================================
-       HERO SECTION (TECHNICAL RESEARCH HEADLINE)
+       HERO SECTION (MODERN EDITORIAL)
        ========================================== -->
   <header class="hero-section reveal">
     <div class="container hero-layout">
-      <span class="hero-tagline">// PORTFOLIO DEPLOYMENT RECORD v2.0</span>
       <h1 class="hero-title">
-        ANJANI MALHOTRA<br>
-        <span style="color: var(--accent-primary);">AI Systems Builder</span><br>
-        <span style="font-weight: 500; font-size: 2.1rem; color: var(--text-secondary);">Machine Learning & Analytics</span>
+        AI Products.<br>
+        Data Systems.<br>
+        Business Impact.
       </h1>
       
       <p class="hero-subtitle">
-        Currently building AI, analytics, automation, and decision intelligence systems. I bridge the gap between quantitative economics, statistical forecasting, and production-grade machine learning orchestration.
+        Currently at <strong>Earnest Data Analytics</strong>. Building AI, forecasting, optimization, and analytics systems. Focused on machine learning, forecasting, NLP, and decision intelligence.
       </p>
       
-      <!-- Academic & Location Summary Grid -->
-      <div class="hero-info-grid">
-        <div class="hero-info-item">
-          <strong>ACADEMIC FOCUS</strong>
-          MSc Economics (Data Analytics)<br>
-          Symbiosis School of Economics
-        </div>
-        <div class="hero-info-item">
-          <strong>CORE CAPABILITIES</strong>
-          RAG Pipelines, NLP Transformers,<br>
-          Operations Simplex Optimization
-        </div>
+      <div class="hero-info-inline">
+        <span class="info-item">
+          <i class="fa-solid fa-graduation-cap"></i> <strong>MSc Economics (Data Analytics)</strong>, Symbiosis School of Economics
+        </span>
       </div>
 
       <div class="hero-ctas">
         <a href="#selected-work" class="explore-trigger">
-          Explore Selected Work <i class="fa-solid fa-arrow-down-long"></i>
+          Selected Work <i class="fa-solid fa-arrow-down-long"></i>
         </a>
       </div>
     </div>
@@ -83,9 +71,9 @@
   <section class="content-section" id="selected-work">
     <div class="container">
       <div class="section-header reveal">
-        <span class="section-tag">Case Studies</span>
-        <h2 class="section-title">Selected Systems</h2>
-        <p class="section-subtitle">A collection of confidential enterprise applications and award-winning personal systems.</p>
+        <span class="section-tag">Selected Work</span>
+        <h2 class="section-title">Selected Work</h2>
+        <p class="section-subtitle">A collection of confidential enterprise applications and decision systems.</p>
       </div>
 
       <div class="work-grid">
@@ -98,7 +86,7 @@
                 <span class="case-study-category">Conversational AI</span>
                 <span class="badge badge-confidential">Confidential Enterprise Project</span>
               </div>
-              <h3 class="case-study-title">Priya Multilingual AI Voice Agent</h3>
+              <h3 class="case-study-title">Voice AI Agent</h3>
             </div>
             
             <div class="case-study-body">
@@ -164,7 +152,81 @@
           </div>
         </article>
 
-        <!-- Case Study 2: HR Sentiment Analysis Platform (Confidential Professional) -->
+        <!-- Case Study 2: Scheme Optimization Engine (Confidential Professional) -->
+        <article class="case-study-card reveal">
+          <div class="case-study-main">
+            <div class="case-study-header">
+              <div class="case-study-meta">
+                <span class="case-study-category">Operations Research</span>
+                <span class="badge badge-confidential">Confidential Enterprise Project</span>
+              </div>
+              <h3 class="case-study-title">Scheme Optimization</h3>
+            </div>
+            
+            <div class="case-study-body">
+              <div>
+                <h4 class="case-study-section-title">Business Problem</h4>
+                <p class="case-study-text">
+                  Enterprise administrative schemes require optimal allocation of resources and budgets under complex multi-variable constraints, where manual scheduling results in sub-optimal overhead distribution.
+                </p>
+              </div>
+              
+              <div>
+                <h4 class="case-study-section-title">Solution</h4>
+                <p class="case-study-text">
+                  Formulated an operations constraints system employing linear programming configurations (using SciPy's simplex and interior-point solvers) to minimize overhead allocation across administrative assets.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="case-study-section-title">My Contributions</h4>
+                <p class="case-study-text">
+                  Formulated the objective functions and constraint limits matrices. Integrated data adapters translating SQL database outputs into matrix arguments.
+                </p>
+              </div>
+            </div>
+
+            <div class="case-study-tags">
+              <span class="badge badge-mono">Python</span>
+              <span class="badge badge-mono">SciPy Optimize</span>
+              <span class="badge badge-mono">Linear Programming</span>
+              <span class="badge badge-mono">SQL</span>
+            </div>
+          </div>
+
+          <!-- Technical visual blueprint diagram -->
+          <div class="case-study-visual">
+            <div class="architecture-blueprint">
+              <div class="blueprint-header">
+                <span class="blueprint-title">OPTIMIZATION_ENGINE_V1.0 [CONFIDENTIAL]</span>
+                <span class="badge badge-mono" style="font-size: 0.6rem;">SOLVER: HIGHS</span>
+              </div>
+              
+              <div class="blueprint-node-row">
+                <div class="blueprint-node">Resource Bounds</div>
+                <div class="blueprint-connector"></div>
+                <div class="blueprint-connector-arrow"><i class="fa-solid fa-list-check"></i></div>
+                <div class="blueprint-node accent">SciPy Solver</div>
+              </div>
+
+              <div class="blueprint-node-row" style="margin-top: 12px;">
+                <div class="blueprint-node">Objective Fn</div>
+                <div class="blueprint-connector"></div>
+                <div class="blueprint-connector-arrow"><i class="fa-solid fa-calculator"></i></div>
+                <div class="blueprint-node accent">Optimal Bounds</div>
+              </div>
+
+              <div class="blueprint-result-box">
+                // SYSTEM CORE LOADED<br>
+                Model: scipy.optimize.linprog<br>
+                Constraint Vectors: 12 Bounds<br>
+                Status: OPTIMAL / STABLE
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 3: HR Sentiment Analysis Platform (Confidential Professional) -->
         <article class="case-study-card reveal">
           <div class="case-study-main">
             <div class="case-study-header">
@@ -172,7 +234,7 @@
                 <span class="case-study-category">NLP Comprehension</span>
                 <span class="badge badge-confidential">Confidential Enterprise Project</span>
               </div>
-              <h3 class="case-study-title">HR Sentiment Analysis Platform</h3>
+              <h3 class="case-study-title">HR Sentiment Platform</h3>
             </div>
             
             <div class="case-study-body">
@@ -232,76 +294,6 @@
                 Clustering: Positive / Neutral / Negative<br>
                 Processing speed: ~25ms per feedback<br>
                 Action: Dashboard Flagging Triggered
-              </div>
-            </div>
-          </div>
-        </article>
-
-        <!-- Case Study 3: Smart Auto-Restock Agent (Public Personal) -->
-        <article class="case-study-card reveal">
-          <div class="case-study-main">
-            <div class="case-study-header">
-              <div class="case-study-meta">
-                <span class="case-study-category">Agentic Finance</span>
-                <span class="badge badge-public">Public Personal Project</span>
-              </div>
-              <h3 class="case-study-title">Smart Auto-Restock Agent</h3>
-            </div>
-            
-            <div class="case-study-body">
-              <div>
-                <h4 class="case-study-section-title">Overview</h4>
-                <p class="case-study-text">
-                  Award-winning autonomous agent designed to monitor inventory, evaluate low-threshold boundaries, and dispatch automated payment requests to vendor ledgers using Payman.ai API triggers.
-                </p>
-              </div>
-
-              <div>
-                <h4 class="case-study-section-title">Milestone</h4>
-                <p class="case-study-text">
-                  Awarded 1st place in the Payman AI Developer Challenge (2025) for demonstrating functional transaction telemetry and agentic budget limits safeguards.
-                </p>
-              </div>
-            </div>
-
-            <div class="case-study-tags">
-              <span class="badge badge-mono">Payman API</span>
-              <span class="badge badge-mono">Agentic Finance</span>
-              <span class="badge badge-mono">Streamlit UI</span>
-              <span class="badge badge-mono">Simplex constraints</span>
-            </div>
-
-            <div style="margin-top: 24px;">
-              <a href="projects.html#auto-restock" class="btn btn-secondary">Read Case Study <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-          </div>
-
-          <div class="case-study-visual">
-            <div class="architecture-blueprint">
-              <div class="blueprint-header">
-                <span class="blueprint-title">PAYMAN_AGENT_WINNER [PUBLIC]</span>
-                <span class="badge badge-mono" style="font-size: 0.6rem;">PAYMENT_LOCK: ON</span>
-              </div>
-              
-              <div class="blueprint-node-row">
-                <div class="blueprint-node">Inventory Poll</div>
-                <div class="blueprint-connector"></div>
-                <div class="blueprint-connector-arrow"><i class="fa-solid fa-list-check"></i></div>
-                <div class="blueprint-node accent">Threshold Logic</div>
-              </div>
-
-              <div class="blueprint-node-row" style="margin-top: 12px;">
-                <div class="blueprint-node">Payman Merchant</div>
-                <div class="blueprint-connector"></div>
-                <div class="blueprint-connector-arrow"><i class="fa-solid fa-credit-card"></i></div>
-                <div class="blueprint-node accent">Restock Payout</div>
-              </div>
-
-              <div class="blueprint-result-box">
-                // SYSTEM TELEMETRY MATCHED<br>
-                Validation: Merchant Ledger Sync<br>
-                GitHub: Available Publicly<br>
-                Demo: Streamlit Cloud Live
               </div>
             </div>
           </div>
