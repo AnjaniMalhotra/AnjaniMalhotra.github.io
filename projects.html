@@ -3,125 +3,512 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Work Portfolio | Anjani Malhotra | AI & ML Systems</title>
+  <meta name="description" content="Detailed engineering specifications and case studies for confidential enterprise AI solutions and public quantitative research tools.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <title>Projects - Anjani Malhotra</title>
 </head>
 <body>
-  <div class="container">
-    <!-- LEFT PANEL -->
-    <aside class="left-panel">
-      <img src="assets/profile.jpeg" alt="Anjani Malhotra" class="avatar">
-      <h2 class="name">Anjani Malhotra</h2>
-      <hr>
-      <p class="title">Economist | Data Analyst</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/anjani-malhotra" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/AnjaniMalhotra" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:anjanimalhotra09@gmail.com"><i class="fas fa-envelope"></i></a>
+
+  <!-- Technical Canvas Grid -->
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Navigation -->
+  <nav class="navbar-container">
+    <a href="index.html" class="nav-brand">
+      ANJANI MALHOTRA <span>AI</span>
+    </a>
+    
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html" class="active">Work</a>
+      <a href="resume.html">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ==========================================
+       WORK CATALOG HEADER
+       ========================================== -->
+  <main class="content-section" style="padding-top: 130px; border-bottom: none;">
+    <div class="container">
+      <div class="section-header reveal" style="margin-bottom: 32px;">
+        <span class="section-tag">Systems & Specs</span>
+        <h1 class="hero-title" style="font-size: 2.3rem; margin-bottom: 8px;">Engineering Case Studies</h1>
+        <p class="section-subtitle">A collection of quantitative decision solvers, translation RAG pipelines, and analytics solutions. Categorized by corporate placements and open-source models.</p>
       </div>
-      <p class="location">Based in Pune, India</p>
-    </aside>
 
-    <!-- RIGHT PANEL -->
-    <main class="right-panel">
-      <!-- NAVBAR INSIDE RIGHT PANEL -->
-      <header class="navbar">
-        <ul>
-          <li><a href="index.html">About Me</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="projects.html" class="active">Projects</a></li>
-        </ul>
-      </header>
-      
+      <!-- Tab Buttons Grid (Linear Style) -->
+      <div class="tab-container reveal">
+        <button class="tab-btn active" data-tab="professional-projects">Professional Experience (Confidential)</button>
+        <button class="tab-btn" data-tab="personal-projects">Personal Projects (Public Reps)</button>
+      </div>
 
-      <section class="projects">
-        <h1>Projects</h1>
-        <p class="intro">
-          Here are some of my featured projects, showcasing my skills in data analytics, visualization, and applied economics.
-        </p>
-      
-        <!-- Project 1 -->
-        <div class="project-card">
-          <div class="project-text">
-            <h2>Global Cities, Countries & Languages Analysis</h2>
-            <h3>ANALYSIS PROJECT</h3>
-            <p>
-              Analyzed global demographics, urbanization, and language diversity using datasets. 
-              Demonstrated skills in Pandas, Matplotlib, Seaborn, and data storytelling. 
-              Provided insights on population, economy, urbanization, and multilingualism.
-            </p>
-            <p> </p>
-            <a href="https://github.com/AnjaniMalhotra/Global-Demographics-and-Linguistic-Diversity" target="_blank" class="btn secondary">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
+      <!-- ==========================================
+           TAB PANEL 1: PROFESSIONAL EXPERIENCE (CONFIDENTIAL)
+           ========================================== -->
+      <div class="tab-panel active" id="professional-projects">
+        <div class="tab-panel-grid">
+          
+          <!-- Earnest Company Intro -->
+          <div class="notebook-card reveal" style="background: var(--accent-light); border-color: var(--accent-primary);">
+            <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;">
+              <div>
+                <h3 style="font-size: 1.15rem; color: var(--accent-primary);">Placement Record: Earnest Data Analytics</h3>
+                <p style="font-size: 0.88rem; color: var(--text-secondary); margin-top: 4px;">Data Analyst Internship (Dec 2025 - Present). The following projects were built under strict corporate NDAs for internal enterprise deployments.</p>
+              </div>
+              <span class="badge badge-confidential">All Assets Confidential</span>
+            </div>
           </div>
-        </div>
-      
-        <!-- Project 2 -->
-        <div class="project-card reverse">
-          <div class="project-text">
-            <h2>Maximizing Taxi Revenue through Payment Type Analysis</h2>
-            <h3>ANALYSIS PROJECT</h3>
-            <p>
-              Examined how payment methods (Card vs Cash) affect NYC Yellow Taxi fares using data cleaning, analysis, and Welch’s t-test. 
-              Found higher average fares with card payments, recommending drivers promote card use.
-            </p>
-            <a href="https://github.com/AnjaniMalhotra/Maximising-Taxi-Revenue-Project" target="_blank" class="btn secondary">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-          </div>
-        </div>
-      
-        <!-- Project 3 -->
-        <div class="project-card">
-          <div class="project-text">
-            <h2>Consumer Behaviour & UPI Adoption</h2>
-            <h3>ACADEMIC PROJECT</h3>
-            <p>
-              Analyzed consumer adoption of UPI payment systems using survey data. Conducted statistical analysis to identify key behavioral and demographic drivers of adoption.
-            </p>
-          </div>
-        </div>
 
-        <!-- Project 4 -->
-        <div class="project-card reverse">
-          <div class="project-text">
-            <h2>A Bibliometric Analysis of the Implications of AI on the Job Market</h2>
-            <h3>ACADEMIC PROJECT</h3>
-            <p>
-              Used Biblioshiny to analyze and visualize research trends on AI’s impact on employment, identifying key authors, journals, and emerging themes.
-            </p>
-          </div>
-        </div>
+          <!-- Priya Voice Agent -->
+          <article class="case-study-card reveal" id="priya-voice">
+            <div class="case-study-main" style="grid-column: span 2;">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Voice RAG Orchestration</span>
+                  <span class="badge badge-confidential">Internal Enterprise Solution</span>
+                </div>
+                <h2 class="case-study-title" style="font-size: 1.65rem;">Voice AI Agent (Priya Agent)</h2>
+              </div>
 
-        <!-- Project 5 -->
-        <div class="project-card">
-          <div class="project-text">
-            <h2>Payman Dev Challenge - Auto Inventory Restock Agent</h2>
-            <h3>AI / ML PROJECT</h3>
-            <p>
-              Streamlit-based smart inventory agent that automatically checks low-stock items, calculates required quantities, creates payees, sends test payments using <strong>Payman.ai</strong>, and logs transactions.
-            </p>
-            <a href="https://auto-restock-agent.streamlit.app/" target="_blank" class="btn secondary">
-              <i class="fas fa-external-link-alt"></i> Live App
-            </a>
-            <a href="https://github.com/yourusername/auto-restock-agent" target="_blank" class="btn secondary">
-              <i class="fab fa-github"></i> View on GitHub
-            </a>
-        </div>
+              <div class="case-study-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 12px;">
+                <div>
+                  <h4 class="case-study-section-title">What Was Built</h4>
+                  <p class="case-study-text">
+                    Engineered an autonomous multilingual voice assistant supporting local Indian dialects. The system transcribes spoken input, triggers vector search queries across local document shards, and synthesizes low-latency verbal answers.
+                  </p>
+                  <ul class="timeline-list" style="margin-top: 12px; gap: 4px;">
+                    <li style="font-size: 0.85rem;">Multilingual voice synthesis</li>
+                    <li style="font-size: 0.85rem;">Retrieval Augmented Generation (RAG)</li>
+                    <li style="font-size: 0.85rem;">Vector embeddings databases</li>
+                    <li style="font-size: 0.85rem;">Sub-second audio translation</li>
+                  </ul>
+                </div>
 
-      </section>
-              
-      <footer class="footer">
-        <div class="footer-info">
-          <p>Thank you for visiting my portfolio. Feel free to explore my projects and get in touch!</p>
-          <p>&copy; 2025 Anjani Malhotra</p>
+                <div>
+                  <h4 class="case-study-section-title">My Technical Contributions</h4>
+                  <p class="case-study-text">
+                    Responsible for complete conversation flow loop orchestration, semantic text search vector pipelines, and ChromaDB document indexing. Tuned translation threshold triggers for national Bhashini API wrappers.
+                  </p>
+                  <div style="margin-top: 16px; background: var(--bg-primary); border: 1px dashed var(--border-light); padding: 12px; border-radius: var(--border-radius-sm); font-family: var(--font-mono); font-size: 0.75rem;">
+                    // Stack Parameters<br>
+                    Engine: Python, ChromaDB, Bhashini APIs, LLMs<br>
+                    Latency Trigger: &lt; 450ms target locks
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Scheme Optimization Solver -->
+          <article class="case-study-card reveal" id="scheme-optimization">
+            <div class="case-study-main" style="grid-column: span 2;">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Operations Research</span>
+                  <span class="badge badge-confidential">Internal Enterprise Solution</span>
+                </div>
+                <h2 class="case-study-title" style="font-size: 1.65rem;">Administrative Scheme Optimization Engine</h2>
+              </div>
+
+              <div class="case-study-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 12px;">
+                <div>
+                  <h4 class="case-study-section-title">What Was Built</h4>
+                  <p class="case-study-text">
+                    Formulated an operations constraints system employing linear programming configurations to minimize overhead allocation across administrative assets. The engine maps bounds and allocation parameters, ensuring resource distribution optimization.
+                  </p>
+                  <ul class="timeline-list" style="margin-top: 12px; gap: 4px;">
+                    <li style="font-size: 0.85rem;">Linear Programming Simplex bounds</li>
+                    <li style="font-size: 0.85rem;">SciPy Optimize mathematical models</li>
+                    <li style="font-size: 0.85rem;">Operations research matrices</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="case-study-section-title">My Technical Contributions</h4>
+                  <p class="case-study-text">
+                    Formulated the core objective equations and constraints limits matrices. Integrated data pipeline adapters translating database inputs into matrix arguments, generating mathematical resource summaries.
+                  </p>
+                  <div style="margin-top: 16px; background: var(--bg-primary); border: 1px dashed var(--border-light); padding: 12px; border-radius: var(--border-radius-sm); font-family: var(--font-mono); font-size: 0.75rem;">
+                    // Constraint Optimization Core<br>
+                    Model: scipy.optimize.linprog(method='highs')<br>
+                    Parameters: Dimensions up to 12 limits vectors
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Expense Management & Fraud -->
+          <article class="case-study-card reveal" id="expense-fraud">
+            <div class="case-study-main" style="grid-column: span 2;">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Security / ML Anomaly</span>
+                  <span class="badge badge-confidential">Internal Enterprise Solution</span>
+                </div>
+                <h2 class="case-study-title" style="font-size: 1.65rem;">Expense Management & Fraud Detection</h2>
+              </div>
+
+              <div class="case-study-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 12px;">
+                <div>
+                  <h4 class="case-study-section-title">What Was Built</h4>
+                  <p class="case-study-text">
+                    An unsupervised anomaly detection system crawling transactional logs to identify corporate cost leakage and suspicious expense files. Prevents cost friction by automatically flagging velocity and volume deviations.
+                  </p>
+                  <ul class="timeline-list" style="margin-top: 12px; gap: 4px;">
+                    <li style="font-size: 0.85rem;">Unsupervised Isolation Forest algorithms</li>
+                    <li style="font-size: 0.85rem;">Precision transactional modeling (94.2%)</li>
+                    <li style="font-size: 0.85rem;">Automatic telemetry threat flags</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="case-study-section-title">My Technical Contributions</h4>
+                  <p class="case-study-text">
+                    Cleaned database fields, adjusted distance contamination metrics, and engineered real-time pipeline listeners to dispatch alert triggers for suspicious spend behaviors.
+                  </p>
+                  <div style="margin-top: 16px; background: var(--bg-primary); border: 1px dashed var(--border-light); padding: 12px; border-radius: var(--border-radius-sm); font-family: var(--font-mono); font-size: 0.75rem;">
+                    // Threat Engine Stats<br>
+                    Framework: Scikit-learn, Pandas, Python<br>
+                    Scoring: Dynamic multi-dimensional distance logs
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- HR Sentiment Classifier -->
+          <article class="case-study-card reveal" id="hr-sentiment">
+            <div class="case-study-main" style="grid-column: span 2;">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Natural Language Processing</span>
+                  <span class="badge badge-confidential">Internal Enterprise Solution</span>
+                </div>
+                <h2 class="case-study-title" style="font-size: 1.65rem;">HR Sentiment Analysis Platform</h2>
+              </div>
+
+              <div class="case-study-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 12px;">
+                <div>
+                  <h4 class="case-study-section-title">What Was Built</h4>
+                  <p class="case-study-text">
+                    A text comprehension model using a fine-tuned DistilBERT transformer block to parse organizational survey files and categorize employee correspondence records into emotional indexes.
+                  </p>
+                  <ul class="timeline-list" style="margin-top: 12px; gap: 4px;">
+                    <li style="font-size: 0.85rem;">DistilBERT language model tuning</li>
+                    <li style="font-size: 0.85rem;">Hugging Face tokenizers pipeline</li>
+                    <li style="font-size: 0.85rem;">Semantic text emotional scoring (F1: 89.7%)</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="case-study-section-title">My Technical Contributions</h4>
+                  <p class="case-study-text">
+                    Developed custom data loader structures in PyTorch, parsed text tokens, and built tabular summaries mapping semantic density clusters for management reporting decks.
+                  </p>
+                  <div style="margin-top: 16px; background: var(--bg-primary); border: 1px dashed var(--border-light); padding: 12px; border-radius: var(--border-radius-sm); font-family: var(--font-mono); font-size: 0.75rem;">
+                    // NLP Transformer parameters<br>
+                    Model: PyTorch pre-trained DistilBERT Classifier<br>
+                    Latency: ~25ms per text array block
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Sales Forecasting System -->
+          <article class="case-study-card reveal" id="sales-forecasting">
+            <div class="case-study-main" style="grid-column: span 2;">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Time-Series Analytics</span>
+                  <span class="badge badge-confidential">Internal Enterprise Solution</span>
+                </div>
+                <h2 class="case-study-title" style="font-size: 1.65rem;">Sales Forecasting System</h2>
+              </div>
+
+              <div class="case-study-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 28px; margin-top: 12px;">
+                <div>
+                  <h4 class="case-study-section-title">What Was Built</h4>
+                  <p class="case-study-text">
+                    Developed an econometric forecasting model predicting time-series conversion metrics and pipeline counts for business development assets.
+                  </p>
+                  <ul class="timeline-list" style="margin-top: 12px; gap: 4px;">
+                    <li style="font-size: 0.85rem;">Time-series ARIMA formulations</li>
+                    <li style="font-size: 0.85rem;">Seasonal lag parameter adjustments</li>
+                    <li style="font-size: 0.85rem;">Statistical regressions validation</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <h4 class="case-study-section-title">My Technical Contributions</h4>
+                  <p class="case-study-text">
+                    Constructed ARIMA parameters testing matrices using Statsmodels, configured historical seasonal factors adjustments, and deployed statistical forecast verification dashboards.
+                  </p>
+                  <div style="margin-top: 16px; background: var(--bg-primary); border: 1px dashed var(--border-light); padding: 12px; border-radius: var(--border-radius-sm); font-family: var(--font-mono); font-size: 0.75rem;">
+                    // Forecasting Engine Core<br>
+                    Library: Python Statsmodels, ARIMA Framework<br>
+                    Validation: Mean Absolute Percentage Error (MAPE) under bounds
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+
         </div>
-      </footer>
-      
-    </main>
-  </div>
+      </div>
+
+      <!-- ==========================================
+           TAB PANEL 2: PERSONAL PROJECTS (PUBLIC)
+           ========================================== -->
+      <div class="tab-panel" id="personal-projects">
+        <div class="tab-panel-grid">
+          
+          <!-- Auto-Restock Agent -->
+          <article class="case-study-card reveal" id="auto-restock">
+            <div class="case-study-main">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Agentic Finance</span>
+                  <span class="badge badge-public" style="background: #ECFDF5; color: #047857; border-color: #A7F3D0;">1st Place Winner</span>
+                </div>
+                <h3 class="case-study-title">Smart Auto-Restock Agent</h3>
+                <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 4px; font-family: var(--font-mono);">Payman AI Developer Challenge 2025</p>
+              </div>
+
+              <div class="case-study-body">
+                <p class="case-study-text">
+                  Autonomous warehouse responder that continuously crawls stock count files, models ordering bounds, registers merchant ledgers, and dispatches automated financial test transactions through Payman.ai API triggers.
+                </p>
+              </div>
+
+              <div class="case-study-tags">
+                <span class="badge badge-mono">Payman API</span>
+                <span class="badge badge-mono">Python</span>
+                <span class="badge badge-mono">Streamlit UI</span>
+                <span class="badge badge-mono">Automated Ledger</span>
+              </div>
+
+              <div style="margin-top: 24px; display: flex; gap: 12px;">
+                <a href="https://github.com/AnjaniMalhotra/auto-restock-agent" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Source Code</a>
+                <a href="https://auto-restock-agent.streamlit.app/" target="_blank" rel="noopener" class="btn btn-accent"><i class="fa-solid fa-square-poll-horizontal"></i> Live Demo</a>
+              </div>
+            </div>
+
+            <!-- Technical preview -->
+            <div class="case-study-visual">
+              <div class="architecture-blueprint">
+                <div class="blueprint-header">
+                  <span class="blueprint-title">PAYMAN_AUTO_FLOW [PUBLIC]</span>
+                </div>
+                <div style="font-size: 0.8rem; font-family: var(--font-mono); color: var(--text-secondary);">
+                  • Inventory drops below limit<br>
+                  • Objective Simplex checks threshold<br>
+                  • Registers vendor at Payman Endpoint<br>
+                  • Dispatches order + transaction logs
+                </div>
+                <div class="blueprint-result-box" style="border-style: solid; border-color: var(--accent-primary); background: var(--bg-secondary);">
+                  <strong style="color: var(--accent-primary);">SYS_STATUS: NOMINAL TRANSACTION COMPLETED</strong>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Competitor Ad Intel -->
+          <article class="case-study-card reveal" id="ad-intel">
+            <div class="case-study-main">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Analytics Platform</span>
+                  <span class="badge badge-public">Public Tool</span>
+                </div>
+                <h3 class="case-study-title">Competitor Ad Intelligence Platform</h3>
+              </div>
+
+              <div class="case-study-body">
+                <p class="case-study-text">
+                  Enterprise dashboard crawling and aggregating sponsor campaign telemetry across Meta sponsor catalogs, Google Transparency registries, and LinkedIn databases. Compiles CPC averages, regional allocations, and creative formats.
+                </p>
+              </div>
+
+              <div class="case-study-tags">
+                <span class="badge badge-mono">Meta API</span>
+                <span class="badge badge-mono">Google Transparency</span>
+                <span class="badge badge-mono">Postgres</span>
+                <span class="badge badge-mono">Python ETL</span>
+              </div>
+
+              <div style="margin-top: 24px;">
+                <a href="https://github.com/AnjaniMalhotra" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Repository</a>
+              </div>
+            </div>
+
+            <div class="case-study-visual">
+              <div class="architecture-blueprint">
+                <div class="blueprint-header">
+                  <span class="blueprint-title">INDEXED_CAMPAIGNS</span>
+                </div>
+                <div style="font-family: var(--font-mono); font-size: 0.72rem; line-height: 1.5;">
+                  Networks: Meta, Google, LinkedIn<br>
+                  CPC Median: $1.42<br>
+                  Sync Poll Rate: Hourly Cron<br>
+                  Telemetry limits: 12.4K entries
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Global Demographics -->
+          <article class="case-study-card reveal" id="global-demographics">
+            <div class="case-study-main" style="grid-column: span 2;">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Exploratory Data Analysis</span>
+                  <span class="badge badge-mono">Academic Project</span>
+                </div>
+                <h3 class="case-study-title">Global Demographics & Linguistic Diversity</h3>
+              </div>
+
+              <div class="case-study-body">
+                <p class="case-study-text">
+                  Statistical demographic research pipeline examining worldwide urbanization metrics, geographic density variables, and linguistic distribution correlations. Conducted thorough exploratory data analysis (EDA), cleaning complex public reports grids.
+                </p>
+              </div>
+
+              <div class="case-study-tags" style="margin-bottom: 20px;">
+                <span class="badge badge-mono">Python Pandas</span>
+                <span class="badge badge-mono">Matplotlib</span>
+                <span class="badge badge-mono">Seaborn Matrix</span>
+                <span class="badge badge-mono">Data Cleansing</span>
+              </div>
+
+              <div>
+                <a href="https://github.com/AnjaniMalhotra/Global-Demographics-and-Linguistic-Diversity" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Source Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- NYC Taxi Welch t-testing -->
+          <article class="case-study-card reveal" id="nyc-taxi">
+            <div class="case-study-main" style="grid-column: span 2;">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Hypothesis Testing</span>
+                  <span class="badge badge-mono">Academic Project</span>
+                </div>
+                <h3 class="case-study-title">NYC Yellow Taxi Revenue Payment Method t-Testing</h3>
+              </div>
+
+              <div class="case-study-body">
+                <p class="case-study-text">
+                  Applied Welch's t-test formulations to multi-gigabyte NYC Yellow Taxi ride datasets to prove the correlation between customer payment methods and average fare volumes. Provided driver optimization tips based on proved statistics.
+                </p>
+              </div>
+
+              <div class="case-study-tags" style="margin-bottom: 20px;">
+                <span class="badge badge-mono">Welch's t-test</span>
+                <span class="badge badge-mono">SciPy Stats</span>
+                <span class="badge badge-mono">Data Modeling</span>
+                <span class="badge badge-mono">Statistical Inference</span>
+              </div>
+
+              <div>
+                <a href="https://github.com/AnjaniMalhotra/Maximising-Taxi-Revenue-Project" target="_blank" rel="noopener" class="btn btn-secondary"><i class="fa-brands fa-github"></i> Source Repository</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- UPI Adoption -->
+          <article class="case-study-card reveal" id="upi-adoption">
+            <div class="case-study-main" style="grid-column: span 2;">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Applied Econometrics</span>
+                  <span class="badge badge-mono">Academic Archive</span>
+                </div>
+                <h3 class="case-study-title">Consumer Behaviour & UPI Digital Wallet Adoption</h3>
+              </div>
+
+              <div class="case-study-body">
+                <p class="case-study-text">
+                  Quantitative survey regression parsing demographic segments and behavioral factors that dictate the adoption velocity of Unified Payments Interface (UPI) digital networks in metropolitan regions. Used econometric proofs to validate models.
+                </p>
+              </div>
+
+              <div class="case-study-tags">
+                <span class="badge badge-mono">Multiple Regression</span>
+                <span class="badge badge-mono">Econometrics Proofs</span>
+                <span class="badge badge-mono">Survey Cleansing</span>
+                <span class="badge badge-mono">Statistical Analysis</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Job Market Bibliometrics -->
+          <article class="case-study-card reveal" id="job-market">
+            <div class="case-study-main" style="grid-column: span 2;">
+              <div class="case-study-header">
+                <div class="case-study-meta">
+                  <span class="case-study-category">Research Mining</span>
+                  <span class="badge badge-mono">Academic Archive</span>
+                </div>
+                <h3 class="case-study-title">AI Implications on Job Market Bibliometrics</h3>
+              </div>
+
+              <div class="case-study-body">
+                <p class="case-study-text">
+                  Constructed search keywords crawls and text mining models using R Biblioshiny libraries to analyze scientific publishing trends, semantic clusters, and publishing timelines regarding AI automation.
+                </p>
+              </div>
+
+              <div class="case-study-tags">
+                <span class="badge badge-mono">R Language</span>
+                <span class="badge badge-mono">Biblioshiny</span>
+                <span class="badge badge-mono">Text Mining</span>
+                <span class="badge badge-mono">Bibliometrics</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="premium-footer">
+    <div class="container footer-content">
+      <a href="index.html" class="footer-logo">
+        ANJANI MALHOTRA
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Work Portfolio</a>
+        <a href="resume.html">Engineering Resume</a>
+      </div>
+      <span class="footer-copy">&copy; 2026 Anjani Malhotra. Technical Case Studies.</span>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

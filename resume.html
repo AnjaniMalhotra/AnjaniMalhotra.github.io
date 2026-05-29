@@ -3,150 +3,280 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Anjani Malhotra | Resume</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <title>Anjani Malhotra | Interactive Spec Resume</title>
+  <meta name="description" content="Technical specifications resume sheet detailing academic milestones, corporate placements timeline, certifications, and skills matrices.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
 
-  <div class="container">
-    <!-- LEFT PANEL -->
-    <aside class="left-panel">
-      <img src="assets/profile.jpeg" alt="Anjani Malhotra" class="avatar">
-      <h2 class="name">Anjani Malhotra</h2>
-      <hr>
-      <p class="title">Economist | Data Analyst</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/anjani-malhotra" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/AnjaniMalhotra" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:anjanimalhotra09@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <p class="location">Based in Delhi, India</p>
-    </aside>
+  <!-- Technical Canvas Grid -->
+  <canvas id="bg-canvas"></canvas>
 
-    <!-- RIGHT PANEL -->
-    <main class="right-panel">
-      <header class="navbar">
-        <ul>
-          <li><a href="index.html">About Me</a></li>
-          <li><a href="resume.html" class="active">Resume</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-      </header>
+  <!-- Navigation -->
+  <nav class="navbar-container">
+    <a href="index.html" class="nav-brand">
+      ANJANI MALHOTRA <span>AI</span>
+    </a>
+    
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Work</a>
+      <a href="resume.html" class="active">Resume</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+
+    <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- ==========================================
+       RESUME SPECIFICATIONS HEADER & CONTENT
+       ========================================== -->
+  <main class="content-section" style="padding-top: 130px; border-bottom: none;">
+    <div class="container">
       
+      <!-- Top Actions Bar -->
+      <div class="reveal" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-bottom: 24px;">
+        <span class="section-tag" style="margin-bottom: 0;">System Specification Sheet</span>
+        <a href="assets/Anjani_Malhotra.pdf" class="btn btn-primary" download>
+          <i class="fa-regular fa-file-pdf"></i> Download PDF CV
+        </a>
+      </div>
 
-      <section class="resume-heading">
-        <h1>Experience</h1>
-        <div class="cta-buttons">
-          <a href="Anjani_Malhotra.pdf" download class="btn primary"><i class="fas fa-download"></i> Download CV</a>
+      <!-- Single-Sheet Cohesive Spec Document Container -->
+      <div class="resume-document reveal">
+        
+        <!-- Document Header (Typographic Identity & Metadata) -->
+        <header class="resume-doc-header">
+          <div class="resume-header-info">
+            <h1 class="resume-header-title">ANJANI MALHOTRA</h1>
+            <span class="resume-header-subtitle">AI Systems Builder & Machine Learning Engineer</span>
+            
+            <div class="resume-header-meta">
+              <span><i class="fa-regular fa-envelope"></i> <a href="mailto:anjanimalhotra09@gmail.com">anjanimalhotra09@gmail.com</a></span>
+              <span><i class="fa-brands fa-linkedin-in"></i> <a href="https://www.linkedin.com/in/anjani-malhotra" target="_blank" rel="noopener">linkedin.com/in/anjani-malhotra</a></span>
+              <span><i class="fa-brands fa-github"></i> <a href="https://github.com/AnjaniMalhotra" target="_blank" rel="noopener">github.com/AnjaniMalhotra</a></span>
+              <span><i class="fa-solid fa-location-dot"></i> Pune / Delhi, India</span>
+            </div>
+          </div>
+        </header>
+
+        <!-- Document Grid -->
+        <div class="resume-doc-grid">
+          
+          <!-- LEFT SIDEBAR: Education, Target, & Languages -->
+          <aside class="resume-doc-sidebar">
+            
+            <!-- Target Statement -->
+            <div class="resume-sidebar-block">
+              <h3 class="resume-doc-section-title"><i class="fa-solid fa-crosshairs"></i> Target</h3>
+              <p style="font-size: 0.82rem; line-height: 1.5; color: var(--text-secondary);">
+                Data analytics specialist and machine learning orchestrator bridging mathematical econometrics with scalable software systems. Experienced in configuring conversational RAG pipelines, training NLP models, and deploying quantitative optimization bounds solvers.
+              </p>
+            </div>
+
+            <!-- Academic Foundations -->
+            <div class="resume-sidebar-block">
+              <h3 class="resume-doc-section-title"><i class="fa-solid fa-graduation-cap"></i> Education</h3>
+              <div style="display: flex; flex-direction: column; gap: 16px;">
+                
+                <!-- Symbiosis -->
+                <div>
+                  <h4 style="font-size: 0.88rem; color: var(--accent-secondary); font-weight: 600;">MSc Economics</h4>
+                  <span class="resume-sidebar-block-title" style="display: block; margin: 2px 0;">Data Analytics Focus</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-primary); font-weight: 600; display: block; margin-bottom: 4px;">Symbiosis SSE • Expected 2026</span>
+                  <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.45;">
+                    Specializing in Time-Series Forecasting, ML Classifiers, and Simplex solvers. Attained Semester Rank #1 in M.Sc. Data Analytics (2025).
+                  </p>
+                </div>
+
+                <!-- DU -->
+                <div>
+                  <h4 style="font-size: 0.88rem; color: var(--accent-secondary); font-weight: 600;">BA Economics & English</h4>
+                  <span class="resume-sidebar-block-title" style="display: block; margin: 2px 0;">Honors Degree</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-primary); font-weight: 600; display: block; margin-bottom: 4px;">University of Delhi • 2023</span>
+                  <p style="font-size: 0.78rem; color: var(--text-muted); line-height: 1.45;">
+                    Rigorous foundations in macro/micro economic modeling, statistical inference matrix, and textual comprehension.
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Linguistic Competencies -->
+            <div class="resume-sidebar-block">
+              <h3 class="resume-doc-section-title">Languages</h3>
+              <div style="display: flex; flex-direction: column; gap: 6px; font-family: var(--font-mono); font-size: 0.72rem;">
+                <div style="display: flex; justify-content: space-between; border-bottom: 1px solid var(--border-light); padding-bottom: 4px;">
+                  <span style="color: var(--text-secondary);">English:</span>
+                  <strong style="color: var(--accent-secondary);">Fluent</strong>
+                </div>
+                <div style="display: flex; justify-content: space-between; padding-top: 2px;">
+                  <span style="color: var(--text-secondary);">Hindi:</span>
+                  <strong style="color: var(--accent-secondary);">Native</strong>
+                </div>
+              </div>
+            </div>
+
+          </aside>
+
+          <!-- RIGHT COLUMN: Professional Placements, Stacks, & Certifications -->
+          <div class="resume-doc-main">
+            
+            <!-- Professional Placements Section -->
+            <section class="resume-doc-section">
+              <h3 class="resume-doc-section-title"><i class="fa-solid fa-briefcase"></i> Placements & Experience</h3>
+              
+              <div style="display: flex; flex-direction: column; gap: 12px;">
+                
+                <!-- Role 1: Earnest -->
+                <div class="resume-timeline-card">
+                  <div class="resume-timeline-dot"></div>
+                  <div class="resume-timeline-header">
+                    <div>
+                      <h4 class="resume-timeline-title">Data Analyst Intern</h4>
+                      <span class="resume-timeline-org">Earnest Data Analytics</span>
+                    </div>
+                    <span class="resume-timeline-date">Dec 2025 - Present</span>
+                  </div>
+                  <ul class="timeline-list">
+                    <li>Designed and structured analytics solutions alongside Agentic AI systems, deploying autonomous workflows and automated recommendations.</li>
+                    <li>Cleaned large database entries, formulated vector logic search vectors, and processed telemetry logs.</li>
+                    <li>Coordinated behavioral insights summaries enabling business directors to assess client segments.</li>
+                  </ul>
+                </div>
+
+                <!-- Role 2: Edulyt -->
+                <div class="resume-timeline-card">
+                  <div class="resume-timeline-dot"></div>
+                  <div class="resume-timeline-header">
+                    <div>
+                      <h4 class="resume-timeline-title">Data Analyst Intern</h4>
+                      <span class="resume-timeline-org">Edulyt India</span>
+                    </div>
+                    <span class="resume-timeline-date">May - Jul 2025</span>
+                  </div>
+                  <ul class="timeline-list">
+                    <li>Formulated high-performance customer tracking dashboards in Power BI employing complex DAX logic algorithms, resolving tracking bottlenecks.</li>
+                    <li>Created customer segregation and behavioral patterns modeling scripts using Python Scikit-learn clustering.</li>
+                    <li>Compiled metric recommendation briefs designed to identify operational growth vectors for management stakeholders.</li>
+                  </ul>
+                </div>
+
+                <!-- Role 3: Margin Sentiment -->
+                <div class="resume-timeline-card">
+                  <div class="resume-timeline-dot"></div>
+                  <div class="resume-timeline-header">
+                    <div>
+                      <h4 class="resume-timeline-title">Financial Analyst Intern</h4>
+                      <span class="resume-timeline-org">Margin Sentiment Advisory</span>
+                    </div>
+                    <span class="resume-timeline-date">Feb - Apr 2024</span>
+                  </div>
+                  <ul class="timeline-list">
+                    <li>Tracked stock index fluctuations, aggregating data records mapping IPO growth profiles.</li>
+                    <li>Assisted advisory panels in compiling detailed client briefings and macroeconomic research sheets.</li>
+                    <li>Applied mathematical models to forecast sectoral trends and compute historical benchmarks.</li>
+                  </ul>
+                </div>
+
+              </div>
+            </section>
+
+            <!-- Technical Capabilities Section -->
+            <section class="resume-doc-section">
+              <h3 class="resume-doc-section-title"><i class="fa-solid fa-gears"></i> Technical Stack</h3>
+              
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px 24px; font-size: 0.85rem;">
+                <div>
+                  <strong style="color: var(--accent-secondary); display: block; margin-bottom: 2px; font-weight: 600;">Core ML & AI</strong>
+                  <p style="color: var(--text-secondary); line-height: 1.45; font-size: 0.82rem;">Python, Scikit-learn, SciPy, Statsmodels, Time-Series Forecasting (ARIMA)</p>
+                </div>
+
+                <div>
+                  <strong style="color: var(--accent-secondary); display: block; margin-bottom: 2px; font-weight: 600;">NLP & RAG</strong>
+                  <p style="color: var(--text-secondary); line-height: 1.45; font-size: 0.82rem;">Transformers, DistilBERT, ChromaDB Vector Store, Bhashini STT/TTS Integration</p>
+                </div>
+
+                <div>
+                  <strong style="color: var(--accent-secondary); display: block; margin-bottom: 2px; font-weight: 600;">Data Engineering</strong>
+                  <p style="color: var(--text-secondary); line-height: 1.45; font-size: 0.82rem;">SQL, Postgres, Pandas, NumPy, ETL Data Pipelines, Hourly Cron Scheduling</p>
+                </div>
+
+                <div>
+                  <strong style="color: var(--accent-secondary); display: block; margin-bottom: 2px; font-weight: 600;">Visual Analytics</strong>
+                  <p style="color: var(--text-secondary); line-height: 1.45; font-size: 0.82rem;">Power BI (DAX Formulas logic), Tableau layouts, Streamlit web panels, Seaborn charts</p>
+                </div>
+              </div>
+            </section>
+
+            <!-- Certifications Section -->
+            <section class="resume-doc-section">
+              <h3 class="resume-doc-section-title"><i class="fa-solid fa-award"></i> Professional Certifications</h3>
+              
+              <div style="display: flex; flex-direction: column; gap: 8px; font-size: 0.85rem;">
+                
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-light); padding-bottom: 6px;">
+                  <span style="color: var(--text-primary); font-weight: 500;">Power BI Fundamentals</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-primary); font-weight: 600;">CFI • Sept 2025</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-light); padding-bottom: 6px;">
+                  <span style="color: var(--text-primary); font-weight: 500;">Applied Text Mining in Python</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-primary); font-weight: 600;">Univ. of Michigan (Coursera) • July 2025</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--border-light); padding-bottom: 6px;">
+                  <span style="color: var(--text-primary); font-weight: 500;">Social Media Data Analytics</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-primary); font-weight: 600;">Univ. of Washington (Coursera) • July 2025</span>
+                </div>
+
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                  <span style="color: var(--text-primary); font-weight: 500;">Introduction & Intermediate SQL</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.72rem; color: var(--accent-primary); font-weight: 600;">DataCamp • Feb 2025</span>
+                </div>
+
+              </div>
+            </section>
+
+          </div>
+
         </div>
-      </section>
 
-      <section class="resume-section">
-        <div class="resume-card">
-          <div class="resume-left">
-            <p class="date">Dec - Present</p>
-            <h3>Data Analyst Intern</h3>
-            <p class="company">Earnest Data Analytics</p>
-          </div>
-          <div class="resume-right">
-            <p>Designed and implemented data analytics solutions alongside Agentic AI systems, 
-              enabling autonomous workflows and intelligent recommendations. 
-              Analyzed large datasets, built logic-driven agents, and translated insights into actionable outcomes.</p>
-          </div>
-        </div>
-        <div class="resume-card">
-          <div class="resume-left">
-            <p class="date">May - Jul 2025</p>
-            <h3>Data Analyst Intern</h3>
-            <p class="company">Edulyt India</p>
-          </div>
-          <div class="resume-right">
-            <p>Developed interactive dashboards in Power BI for transaction analysis.
-                Used Python for customer segmentation and behavioral insights.
-                Presented data-driven recommendations to improve customer engagement.</p>
-          </div>
-        </div>
+      </div>
 
-        <div class="resume-card">
-          <div class="resume-left">
-            <p class="date">Feb - Apr 2024</p>
-            <h3>Financial Analyst Intern</h3>
-            <p class="company">Margin Sentiment Advisory</p>
-          </div>
-          <div class="resume-right">
-            <p>Analyzed stock market trends and IPO performance to support investment strategies.
-                Assisted in preparing financial research reports and client presentations.
-                Applied quantitative techniques to evaluate sectoral performance.</p>
-          </div>
-        </div>
-      </section>
+    </div>
+  </main>
 
-      <section class="resume-section">
-        <h2>Education</h2>
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="premium-footer">
+    <div class="container footer-content">
+      <a href="index.html" class="footer-logo">
+        ANJANI MALHOTRA
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Work Portfolio</a>
+        <a href="resume.html">Engineering Resume</a>
+      </div>
+      <span class="footer-copy">&copy; 2026 Anjani Malhotra. Technical Case Studies.</span>
+    </div>
+  </footer>
 
-        <div class="resume-card">
-          <div class="resume-left">
-            <p class="date">Expected 2026</p>
-            <h3>M.Sc. Economics (Data Analytics)</h3>
-            <p class="company">Symbiosis School of Economics · Pune</p>
-          </div>
-          <div class="resume-right">
-            <p>Focused on econometrics, machine learning, data visualization, and business analytics. Completed capstone project on UPI adoption & consumer behavior.</p>
-          </div>
-        </div>
-
-        <div class="resume-card">
-          <div class="resume-left">
-            <p class="date">2023</p>
-            <h3>B.A. Economics & English</h3>
-            <p class="company">University of Delhi· Delhi</p>
-          </div>
-          <div class="resume-right">
-            <p>Graduated with honors. Built strong foundation in micro/macro economics, statistics, and quantitative research methods.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="resume-section">
-        <h2>Skill Set</h2>
-        <ul class="skills-list">
-          <li>Python (Pandas, NumPy, Matplotlib, Seaborn)</li>
-          <li>SQL & Database Management</li>
-          <li>R for Econometrics</li>
-          <li>Power BI & Data Visualization</li>
-          <li>Statistical Modeling & Hypothesis Testing</li>
-        </ul>
-      </section>
-
-      <section class="resume-section">
-        <h2>Certifications</h2>
-        <ul class="skills-list">
-          <li>Power BI Fundamentals (Corporate Finance Institute, Coursera) - Sept 2025</li>
-          <li>Social Media Data Analytics (University of Washington, Coursera) – July 2025</li>
-          <li>Applied Text Mining in Python (University of Michigan, Coursera) – July 2025</li>
-          <li>Introduction and Intermediate SQL (Data Camp) – Feb 2025</li>
-        </ul>
-      </section>
-
-      <section class="resume-section">
-        <h2>Languages</h2>
-        <ul class="skills-list">
-          <li>English – Fluent</li>
-          <li>Hindi – Native</li>
-        </ul>
-      </section>
-
-      <footer class="footer">
-        <div class="footer-info">
-          <p>Thank you for visiting my portfolio. Feel free to explore my projects and get in touch!</p>
-          <p>&copy; 2025 Anjani Malhotra</p>
-        </div>
-      </footer>
-
-    </main>
-  </div>
-
+  <!-- JS Scripts -->
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>

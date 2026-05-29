@@ -3,64 +3,624 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <title>Anjani Malhotra | AI Systems Builder & Machine Learning Engineer</title>
+  <meta name="description" content="AI & Machine Learning Engineer portfolio specializing in NLP, Generative AI, RAG pipelines, forecasting models, and analytics engineering.">
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  
+  <!-- Font Awesome CDN -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <title>About Anjani Malhotra</title>
 </head>
 <body>
-  <div class="container">
-    <!-- LEFT PANEL -->
-    <aside class="left-panel">
-      <img src="assets/profile.jpeg" alt="Anjani Malhotra" class="avatar">
-      <h2 class="name">Anjani Malhotra</h2>
-      <hr>
-      <p class="title">Economist | Data Analyst</p>
-      <div class="social-icons">
-        <a href="https://www.linkedin.com/in/anjani-malhotra" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="https://github.com/AnjaniMalhotra" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="mailto:anjanimalhotra09@gmail.com"><i class="fas fa-envelope"></i></a>
-      </div>
-      <p class="location">Based in Pune, India</p>
-    </aside>
 
-    <!-- RIGHT PANEL -->
-    <main class="right-panel">
-      <!-- NAVBAR INSIDE RIGHT PANEL -->
-      <header class="navbar">
-        <ul>
-          <li><a href="index.html" class="active">About Me</a></li>
-          <li><a href="resume.html">Resume</a></li>
-          <li><a href="projects.html">Projects</a></li>
-        </ul>
-      </header>
+  <!-- Technical Grid Canvas Background -->
+  <canvas id="bg-canvas"></canvas>
 
-      <section class="hero">
-        <h1>About Me!</h1>
-        <h3>Turning Data into Impactful Decisions</h3>
-        <p class="intro">
-          I am a Postgraduate student in Economics with a specialization in Data Analytics, equipped with strong skills in 
-          data manipulation, statistical analysis, and visualization using tools such as Python, SQL, Excel, and Power BI. 
-          My academic journey has allowed me to combine economic theory with analytical techniques, enabling me to
-          uncover patterns, generate insights, and support evidence-based decision-making. 
-          I am particularly passionate about applying data-driven approaches to real-world economic and business challenges, 
-          with the goal of contributing to effective strategies, innovation, and growth.
-        </p>
-      </section>
+  <!-- Clean Editorial Navbar -->
+  <nav class="navbar-container">
+    <a href="index.html" class="nav-brand">
+      ANJANI MALHOTRA <span>AI</span>
+    </a>
+    
+    <div class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="projects.html">Work</a>
+      <a href="resume.html">Resume</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-      <section class="quick-facts">
-        <div><i class="fas fa-code"></i> Proficient in Python, SQL, R, Power BI</div>
-        <div><i class="fas fa-chart-line"></i> Statistical Modeling</div>
-        <div><i class="fas fa-database"></i> Data Visualization</div>
-      </section>
+    <button class="mobile-menu-toggle" aria-label="Toggle Navigation Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
 
-      <footer class="footer">
-        <div class="footer-info">
-          <p>Thank you for visiting my portfolio. Feel free to explore my projects and get in touch!</p>
-          <p>&copy; 2025 Anjani Malhotra</p>
+  <!-- ==========================================
+       HERO SECTION (TECHNICAL RESEARCH HEADLINE)
+       ========================================== -->
+  <header class="hero-section reveal">
+    <div class="container hero-layout">
+      <span class="hero-tagline">// PORTFOLIO DEPLOYMENT RECORD v2.0</span>
+      <h1 class="hero-title">
+        ANJANI MALHOTRA<br>
+        <span style="color: var(--accent-primary);">AI Systems Builder</span><br>
+        <span style="font-weight: 500; font-size: 2.1rem; color: var(--text-secondary);">Machine Learning & Analytics</span>
+      </h1>
+      
+      <p class="hero-subtitle">
+        Currently building AI, analytics, automation, and decision intelligence systems. I bridge the gap between quantitative economics, statistical forecasting, and production-grade machine learning orchestration.
+      </p>
+      
+      <!-- Academic & Location Summary Grid -->
+      <div class="hero-info-grid">
+        <div class="hero-info-item">
+          <strong>ACADEMIC FOCUS</strong>
+          MSc Economics (Data Analytics)<br>
+          Symbiosis School of Economics
         </div>
-      </footer>
-    </main>
-  </div>
+        <div class="hero-info-item">
+          <strong>CORE CAPABILITIES</strong>
+          RAG Pipelines, NLP Transformers,<br>
+          Operations Simplex Optimization
+        </div>
+      </div>
+
+      <div class="hero-ctas">
+        <a href="#selected-work" class="explore-trigger">
+          Explore Selected Work <i class="fa-solid fa-arrow-down-long"></i>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       SELECTED CASE STUDIES SECTION
+       ========================================== -->
+  <section class="content-section" id="selected-work">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Case Studies</span>
+        <h2 class="section-title">Selected Systems</h2>
+        <p class="section-subtitle">A collection of confidential enterprise applications and award-winning personal systems.</p>
+      </div>
+
+      <div class="work-grid">
+        
+        <!-- Case Study 1: Priya AI Voice Agent (Confidential Professional) -->
+        <article class="case-study-card reveal">
+          <div class="case-study-main">
+            <div class="case-study-header">
+              <div class="case-study-meta">
+                <span class="case-study-category">Conversational AI</span>
+                <span class="badge badge-confidential">Confidential Enterprise Project</span>
+              </div>
+              <h3 class="case-study-title">Priya Multilingual AI Voice Agent</h3>
+            </div>
+            
+            <div class="case-study-body">
+              <div>
+                <h4 class="case-study-section-title">Business Problem</h4>
+                <p class="case-study-text">
+                  Corporate customer support pipelines suffer from significant friction in processing spoken queries in regional dialects, introducing operational lag and high support desk costs.
+                </p>
+              </div>
+              
+              <div>
+                <h4 class="case-study-section-title">Solution</h4>
+                <p class="case-study-text">
+                  Engineered an autonomous multilingual voice pipeline utilizing low-latency national Bhashini API wrappers and ChromaDB vector search to transcribe, parse context, and answer verbal prompts in regional dialects in sub-second times.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="case-study-section-title">My Contributions</h4>
+                <p class="case-study-text">
+                  Designed conversation state orchestration, established ChromaDB document chunks query optimization, and integrated speech-to-text translators.
+                </p>
+              </div>
+            </div>
+
+            <div class="case-study-tags">
+              <span class="badge badge-mono">Python</span>
+              <span class="badge badge-mono">ChromaDB</span>
+              <span class="badge badge-mono">Bhashini APIs</span>
+              <span class="badge badge-mono">RAG Pipelines</span>
+            </div>
+          </div>
+
+          <!-- Technical visual blueprint diagram -->
+          <div class="case-study-visual">
+            <div class="architecture-blueprint">
+              <div class="blueprint-header">
+                <span class="blueprint-title">PRIYA_FLOW_V1.2 [CONFIDENTIAL]</span>
+                <span class="badge badge-mono" style="font-size: 0.6rem;">LATENCY: ~420ms</span>
+              </div>
+              
+              <div class="blueprint-node-row">
+                <div class="blueprint-node">User Speech</div>
+                <div class="blueprint-connector"></div>
+                <div class="blueprint-connector-arrow"><i class="fa-solid fa-microphone"></i></div>
+                <div class="blueprint-node accent">Bhashini API</div>
+              </div>
+
+              <div class="blueprint-node-row" style="margin-top: 12px;">
+                <div class="blueprint-node">ChromaDB RAG</div>
+                <div class="blueprint-connector"></div>
+                <div class="blueprint-connector-arrow"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="blueprint-node accent">LLM Pipeline</div>
+              </div>
+
+              <div class="blueprint-result-box">
+                // PIPELINE PARAMETERS<br>
+                Embeddings: DistilBERT Custom<br>
+                Dialects Map: Hindi, Marathi, Tamil<br>
+                Lock State: STABLE / INTERNAL
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 2: HR Sentiment Analysis Platform (Confidential Professional) -->
+        <article class="case-study-card reveal">
+          <div class="case-study-main">
+            <div class="case-study-header">
+              <div class="case-study-meta">
+                <span class="case-study-category">NLP Comprehension</span>
+                <span class="badge badge-confidential">Confidential Enterprise Project</span>
+              </div>
+              <h3 class="case-study-title">HR Sentiment Analysis Platform</h3>
+            </div>
+            
+            <div class="case-study-body">
+              <div>
+                <h4 class="case-study-section-title">Business Problem</h4>
+                <p class="case-study-text">
+                  Enterprise HR teams receive thousands of open-ended survey reviews and feedback lines. Manual analysis is cost-prohibitive, leading to employee concerns going unnoticed.
+                </p>
+              </div>
+              
+              <div>
+                <h4 class="case-study-section-title">Solution</h4>
+                <p class="case-study-text">
+                  Built a specialized text classification and tokenization pipeline using a fine-tuned DistilBERT transformer block to parse organizational logs and output precise employee emotional metrics.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="case-study-section-title">My Contributions</h4>
+                <p class="case-study-text">
+                  Optimized PyTorch tokenizer scripts, handled high-volume dataset cleaning, and organized emotion density clusters maps.
+                </p>
+              </div>
+            </div>
+
+            <div class="case-study-tags">
+              <span class="badge badge-mono">DistilBERT</span>
+              <span class="badge badge-mono">Hugging Face</span>
+              <span class="badge badge-mono">Python</span>
+              <span class="badge badge-mono">Pandas</span>
+            </div>
+          </div>
+
+          <div class="case-study-visual">
+            <div class="architecture-blueprint">
+              <div class="blueprint-header">
+                <span class="blueprint-title">NLP_CLASSIFIER_V2.0 [CONFIDENTIAL]</span>
+                <span class="badge badge-mono" style="font-size: 0.6rem;">F1-SCORE: 89.7%</span>
+              </div>
+              
+              <div class="blueprint-node-row">
+                <div class="blueprint-node">Survey Input</div>
+                <div class="blueprint-connector"></div>
+                <div class="blueprint-connector-arrow"><i class="fa-solid fa-file-text"></i></div>
+                <div class="blueprint-node accent">Tokenizer</div>
+              </div>
+
+              <div class="blueprint-node-row" style="margin-top: 12px;">
+                <div class="blueprint-node">DistilBERT Block</div>
+                <div class="blueprint-connector"></div>
+                <div class="blueprint-connector-arrow"><i class="fa-solid fa-server"></i></div>
+                <div class="blueprint-node accent">Sentiment Output</div>
+              </div>
+
+              <div class="blueprint-result-box">
+                // EMOTION VECTORS ACTIVE<br>
+                Clustering: Positive / Neutral / Negative<br>
+                Processing speed: ~25ms per feedback<br>
+                Action: Dashboard Flagging Triggered
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case Study 3: Smart Auto-Restock Agent (Public Personal) -->
+        <article class="case-study-card reveal">
+          <div class="case-study-main">
+            <div class="case-study-header">
+              <div class="case-study-meta">
+                <span class="case-study-category">Agentic Finance</span>
+                <span class="badge badge-public">Public Personal Project</span>
+              </div>
+              <h3 class="case-study-title">Smart Auto-Restock Agent</h3>
+            </div>
+            
+            <div class="case-study-body">
+              <div>
+                <h4 class="case-study-section-title">Overview</h4>
+                <p class="case-study-text">
+                  Award-winning autonomous agent designed to monitor inventory, evaluate low-threshold boundaries, and dispatch automated payment requests to vendor ledgers using Payman.ai API triggers.
+                </p>
+              </div>
+
+              <div>
+                <h4 class="case-study-section-title">Milestone</h4>
+                <p class="case-study-text">
+                  Awarded 1st place in the Payman AI Developer Challenge (2025) for demonstrating functional transaction telemetry and agentic budget limits safeguards.
+                </p>
+              </div>
+            </div>
+
+            <div class="case-study-tags">
+              <span class="badge badge-mono">Payman API</span>
+              <span class="badge badge-mono">Agentic Finance</span>
+              <span class="badge badge-mono">Streamlit UI</span>
+              <span class="badge badge-mono">Simplex constraints</span>
+            </div>
+
+            <div style="margin-top: 24px;">
+              <a href="projects.html#auto-restock" class="btn btn-secondary">Read Case Study <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+
+          <div class="case-study-visual">
+            <div class="architecture-blueprint">
+              <div class="blueprint-header">
+                <span class="blueprint-title">PAYMAN_AGENT_WINNER [PUBLIC]</span>
+                <span class="badge badge-mono" style="font-size: 0.6rem;">PAYMENT_LOCK: ON</span>
+              </div>
+              
+              <div class="blueprint-node-row">
+                <div class="blueprint-node">Inventory Poll</div>
+                <div class="blueprint-connector"></div>
+                <div class="blueprint-connector-arrow"><i class="fa-solid fa-list-check"></i></div>
+                <div class="blueprint-node accent">Threshold Logic</div>
+              </div>
+
+              <div class="blueprint-node-row" style="margin-top: 12px;">
+                <div class="blueprint-node">Payman Merchant</div>
+                <div class="blueprint-connector"></div>
+                <div class="blueprint-connector-arrow"><i class="fa-solid fa-credit-card"></i></div>
+                <div class="blueprint-node accent">Restock Payout</div>
+              </div>
+
+              <div class="blueprint-result-box">
+                // SYSTEM TELEMETRY MATCHED<br>
+                Validation: Merchant Ledger Sync<br>
+                GitHub: Available Publicly<br>
+                Demo: Streamlit Cloud Live
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE SKILLS SECTION (EDITORIAL LIST CLICKABLE)
+       ========================================== -->
+  <section class="content-section" id="skills-ecosystem">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">System Capabilities</span>
+        <h2 class="section-title">Capabilities Matrix</h2>
+        <p class="section-subtitle">Click on any core technological skill below to inspect associated project logs, contributions, and technical links.</p>
+      </div>
+
+      <div class="skills-interactive-container reveal">
+        
+        <!-- Left clickable column list -->
+        <div class="skills-list">
+          <button class="skill-interactive-item active" data-skill="machine-learning">
+            <span>Machine Learning</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <button class="skill-interactive-item" data-skill="forecasting">
+            <span>Forecasting Systems</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <button class="skill-interactive-item" data-skill="nlp">
+            <span>Natural Language Processing (NLP)</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <button class="skill-interactive-item" data-skill="llms">
+            <span>Large Language Models (LLMs)</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <button class="skill-interactive-item" data-skill="rag">
+            <span>Retrieval Augmented Generation (RAG)</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <button class="skill-interactive-item" data-skill="optimization">
+            <span>Linear & Simplex Optimization</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <button class="skill-interactive-item" data-skill="data-engineering">
+            <span>Data Engineering & Pipelines</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <button class="skill-interactive-item" data-skill="analytics">
+            <span>Advanced Data Analytics</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+          <button class="skill-interactive-item" data-skill="visualization">
+            <span>Information Visualization</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </button>
+        </div>
+
+        <!-- Right Preview Panel -->
+        <div class="skills-preview-panel">
+          <div class="preview-placeholder">
+            <i class="fa-solid fa-microchip"></i>
+            <p>Select a system capability on the left to trace connected case studies and metrics.</p>
+          </div>
+          
+          <div class="preview-content">
+            <h3 class="preview-title">Skill Title</h3>
+            <p class="preview-description">Capability detailed description.</p>
+            
+            <div style="margin-top: 12px;">
+              <span class="case-study-section-title">Connected Deployment Logs</span>
+              <div class="preview-project-list">
+                <!-- Generated dynamically by js/main.js -->
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       INTERACTIVE DEVELOPER TERMINAL SECTION
+       ========================================== -->
+  <section class="content-section" id="developer-terminal">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Interactive Environment</span>
+        <h2 class="section-title">Engineering Terminal</h2>
+        <p class="section-subtitle">Simulate pipeline queries and inspect systems architecture parameters in real-time.</p>
+      </div>
+
+      <div class="terminal-wrapper reveal">
+        <div class="terminal-header">
+          <div class="terminal-buttons">
+            <span class="terminal-btn"></span>
+            <span class="terminal-btn"></span>
+            <span class="terminal-btn"></span>
+          </div>
+          <span class="terminal-title">anjani@systems-node:~</span>
+          <span class="terminal-badge">STABLE CONNECTION</span>
+        </div>
+        
+        <div class="terminal-body">
+          <div class="terminal-welcome">
+            Welcome to Malhotra AI Environment. System diagnostic modules loaded.<br>
+            Type <span>"help"</span> to list all pipeline parameters or select shortcuts below.
+          </div>
+        </div>
+
+        <div class="terminal-input-line">
+          <span style="color: var(--accent-primary); font-weight: bold;">&gt;</span>
+          <input type="text" class="terminal-input" placeholder="Query standard parameters (e.g. ask voice-ai)..." aria-label="Terminal Input">
+          <div class="terminal-cursor"></div>
+        </div>
+
+        <div class="terminal-suggestions">
+          <span class="terminal-suggestion-label">Quick Queries:</span>
+          <button class="terminal-suggest-btn" data-cmd="help">help</button>
+          <button class="terminal-suggest-btn" data-cmd="ask voice-ai">ask voice-ai</button>
+          <button class="terminal-suggest-btn" data-cmd="show architecture">show architecture</button>
+          <button class="terminal-suggest-btn" data-cmd="view forecasting">view forecasting</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       PROFESSIONAL TIMELINE SECTION (EXPERIENCE)
+       ========================================== -->
+  <section class="content-section" id="timeline-experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Professional Path</span>
+        <h2 class="section-title">Corporate Placements</h2>
+        <p class="section-subtitle">Tracing formal placements and internships in data systems engineering, quantitative research, and analytics orchestration.</p>
+      </div>
+
+      <div class="timeline-container reveal">
+        
+        <!-- Earnest -->
+        <div class="timeline-row">
+          <div class="timeline-sidebar">
+            <span class="timeline-dates">Dec 2025 - Present</span>
+            <h3 class="timeline-company">Earnest Data Analytics</h3>
+            <span class="timeline-location">Pune, India (Hybrid)</span>
+          </div>
+          <div class="timeline-main">
+            <h4 class="timeline-role">Data Analyst Intern</h4>
+            <ul class="timeline-list">
+              <li>Designed and structured analytics solutions alongside Agentic AI systems, deploying autonomous workflows and automated recommendations.</li>
+              <li>Cleaned large database entries, formulated vector logic search vectors, and processed telemetry logs.</li>
+              <li>Coordinated behavioral insights summaries enabling business directors to assess client segments.</li>
+            </ul>
+            <div class="timeline-tags-wrap">
+              <span class="badge badge-mono">Agentic AI</span>
+              <span class="badge badge-mono">Python</span>
+              <span class="badge badge-mono">SQL</span>
+              <span class="badge badge-mono">Vector DB</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Edulyt -->
+        <div class="timeline-row">
+          <div class="timeline-sidebar">
+            <span class="timeline-dates">May - Jul 2025</span>
+            <h3 class="timeline-company">Edulyt India</h3>
+            <span class="timeline-location">Delhi, India (Remote)</span>
+          </div>
+          <div class="timeline-main">
+            <h4 class="timeline-role">Data Analyst Intern</h4>
+            <ul class="timeline-list">
+              <li>Formulated high-performance customer tracking dashboards in Power BI employing complex DAX logic algorithms, resolving tracking bottlenecks.</li>
+              <li>Created customer segregation and behavioral patterns modeling scripts using Python Scikit-learn clustering.</li>
+              <li>Compiled metric recommendation briefs designed to identify operational growth vectors for management stakeholders.</li>
+            </ul>
+            <div class="timeline-tags-wrap">
+              <span class="badge badge-mono">Power BI</span>
+              <span class="badge badge-mono">Python Clustering</span>
+              <span class="badge badge-mono">DAX Logic</span>
+              <span class="badge badge-mono">Pandas</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Margin Sentiment -->
+        <div class="timeline-row">
+          <div class="timeline-sidebar">
+            <span class="timeline-dates">Feb - Apr 2024</span>
+            <h3 class="timeline-company">Margin Sentiment Advisory</h3>
+            <span class="timeline-location">Delhi, India (In-office)</span>
+          </div>
+          <div class="timeline-main">
+            <h4 class="timeline-role">Financial Analyst Intern</h4>
+            <ul class="timeline-list">
+              <li>Tracked sectoral index fluctuations and compiled data records mapping Indian IPO growth profiles.</li>
+              <li>Assisted advisory panels in compiling detailed client briefings and macroeconomic research sheets.</li>
+              <li>Applied mathematical models to forecast sectoral trends and compute historical benchmarks.</li>
+            </ul>
+            <div class="timeline-tags-wrap">
+              <span class="badge badge-mono">Financial Analysis</span>
+              <span class="badge badge-mono">IPO Modeling</span>
+              <span class="badge badge-mono">Quantitative Analytics</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EDUCATION SECTION
+       ========================================== -->
+  <section class="content-section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Scholastic Records</span>
+        <h2 class="section-title">Academic Foundations</h2>
+        <p class="section-subtitle">Bridging mathematical economics with analytics engineering.</p>
+      </div>
+
+      <div class="education-grid reveal">
+        <div class="education-card">
+          <h3 class="education-school">Symbiosis School of Economics</h3>
+          <div class="education-degree">M.Sc. Economics (Data Analytics Focus)</div>
+          <span class="education-dates">Expected Graduation: 2026</span>
+          <p class="education-details">
+            Key coursework covers Advanced Statistics, Forecasting Models, Econometric Regression, NLP Systems, and Decision Simplex Solvers. Attained Semester Rank #1 in M.Sc. Data Analytics (2025).
+          </p>
+        </div>
+
+        <div class="education-card">
+          <h3 class="education-school">University of Delhi</h3>
+          <div class="education-degree">B.A. Economics & English (Honors)</div>
+          <span class="education-dates">Graduated: 2023</span>
+          <p class="education-details">
+            Rigorous training in quantitative macroeconomics, microeconomics constraint math, advanced stats proofs, and textual comprehension.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CONTACT SECTION
+       ========================================== -->
+  <section class="content-section" id="contact">
+    <div class="container">
+      <div class="contact-layout reveal">
+        
+        <div>
+          <span class="section-tag">Direct Line</span>
+          <h2 class="section-title" style="font-size: 2.1rem; margin-bottom: 20px;">Deploy Intelligent Systems</h2>
+          <p style="margin-bottom: 24px;">
+            Seek expertise in building multilingual voice assistants, transactional forecast matrices, complex anomaly safeguards, and automated reporting systems. I am seeking roles in Applied AI Development, Machine Learning, and Analytics Engineering.
+          </p>
+          
+          <div>
+            <a href="mailto:anjanimalhotra09@gmail.com" class="btn btn-primary" style="margin-right: 12px;">Email Me</a>
+            <a href="resume.html" class="btn btn-secondary">Interactive Resume</a>
+          </div>
+        </div>
+
+        <div class="contact-channels">
+          <a href="mailto:anjanimalhotra09@gmail.com" class="contact-link-card">
+            <i class="fa-regular fa-envelope"></i>
+            <div class="contact-link-details">
+              <span class="contact-link-label">EMAIL ADDRESS</span>
+              <span class="contact-link-value">anjanimalhotra09@gmail.com</span>
+            </div>
+          </a>
+
+          <a href="https://www.linkedin.com/in/anjani-malhotra" target="_blank" rel="noopener" class="contact-link-card">
+            <i class="fa-brands fa-linkedin-in"></i>
+            <div class="contact-link-details">
+              <span class="contact-link-label">LINKEDIN PROFILE</span>
+              <span class="contact-link-value">linkedin.com/in/anjani-malhotra</span>
+            </div>
+          </a>
+
+          <a href="https://github.com/AnjaniMalhotra" target="_blank" rel="noopener" class="contact-link-card">
+            <i class="fa-brands fa-github"></i>
+            <div class="contact-link-details">
+              <span class="contact-link-label">GITHUB REPOSITORIES</span>
+              <span class="contact-link-value">github.com/AnjaniMalhotra</span>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="premium-footer">
+    <div class="container footer-content">
+      <a href="index.html" class="footer-logo">
+        ANJANI MALHOTRA
+      </a>
+      <div class="footer-links">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Work Portfolio</a>
+        <a href="resume.html">Engineering Resume</a>
+      </div>
+      <span class="footer-copy">&copy; 2026 Anjani Malhotra. Technical Case Studies.</span>
+    </div>
+  </footer>
+
+  <!-- JS Scripts -->
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
