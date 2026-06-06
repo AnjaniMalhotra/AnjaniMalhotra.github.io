@@ -1,5 +1,94 @@
-/**
- * RESPONSIVE.CSS
- * Responsive classes are fully integrated within the core style.css file.
- * This sheet acts as a clean placeholder to ensure legacy HTML references load successfully.
- */
+/* ============================================================
+   RESPONSIVE — Mobile breakpoints
+   ============================================================ */
+
+@media (max-width: 900px) {
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+
+  .personal-projects {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Nav */
+  .nav-links { display: none; }
+  .nav-hamburger { display: block; }
+
+  /* Hero */
+  .hero-name { font-size: 2.8rem; }
+  .hero-inner { padding: 100px 24px 80px; }
+
+  /* About */
+  #about .container { padding: 0 24px; }
+  .about-stats { grid-template-columns: 1fr 1fr; }
+
+  /* Experience */
+  .timeline-entry {
+    grid-template-columns: 1fr;
+  }
+  .timeline-left { display: none; }
+
+  /* Projects */
+  .personal-projects { grid-template-columns: 1fr; }
+
+  /* Skills */
+  .skills-grid { grid-template-columns: 1fr; }
+
+  /* Education */
+  .edu-row {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+  .edu-meta { justify-content: flex-start; }
+
+  /* Contact */
+  .contact-headline { font-size: 2rem; }
+  .contact-links { flex-direction: column; gap: 20px; }
+  .contact-separator { display: none; }
+
+  /* Section padding */
+  section { padding: 64px 0; }
+
+  .container { padding: 0 24px; }
+  .hero-inner { padding: 100px 24px 72px; }
+
+  /* Pro card */
+  .pro-card-row { grid-template-columns: 68px 1fr; }
+
+  /* Section title */
+  .section-title { font-size: 1.6rem; }
+  .contact-headline { font-size: 1.9rem; }
+}
+
+@media (max-width: 480px) {
+  .hero-name { font-size: 2.2rem; }
+  .hero-rule { max-width: 100%; }
+
+  .container { padding: 0 16px; }
+  .hero-inner { padding: 90px 16px 64px; }
+
+  .pro-card { padding: 20px; }
+  .pro-card-row { grid-template-columns: 1fr; gap: 3px; }
+  .pro-card-label { margin-bottom: 2px; }
+
+  .pers-card-body { padding: 14px 16px; }
+
+  .stat-item { padding: 14px 16px; }
+  .stat-value { font-size: 1.2rem; }
+
+  .edu-row { padding: 14px 16px; }
+
+  .hero-achievements { gap: 7px; }
+  .achievement-pill { font-size: 0.68rem; padding: 5px 11px; }
+
+  .hero-ctas { flex-direction: column; gap: 10px; }
+  .btn-primary, .btn-outline { justify-content: center; }
+}
