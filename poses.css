@@ -1,0 +1,39 @@
+/* Pose test: 9 drawn poses stacked; one is visible at a time with a soft cross-fade. */
+.poser {
+  --size: min(84svh, 43vw, 760px);
+  position: relative;
+  width: var(--size);
+  aspect-ratio: 465 / 417;
+  will-change: transform;
+  user-select: none;
+  -webkit-user-select: none;
+  /* dissolve the cut-off bottom and side edges of the bust into the page */
+  -webkit-mask-image:
+    linear-gradient(to bottom, #000 80%, transparent 100%),
+    linear-gradient(to right, transparent 4%, #000 16%, #000 84%, transparent 96%);
+  -webkit-mask-composite: source-in;
+          mask-image:
+    linear-gradient(to bottom, #000 80%, transparent 100%),
+    linear-gradient(to right, transparent 4%, #000 16%, #000 84%, transparent 96%);
+          mask-composite: intersect;
+}
+
+.pose {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--fade, 220ms) cubic-bezier(.4, 0, .2, 1);
+}
+.pose.is-on { opacity: 1; }
+/* once the canvas blender is ready, the <img> poses are only image sources */
+.poser.is-canvas .pose { visibility: hidden; }
+.pose-canvas { position: absolute; inset: 0; width: 100%; height: 100%; display: block; }
+
+.hero .stage { align-self: end; margin-bottom: -3%; }
+
+@media (max-width: 960px) {
+  .poser { --size: min(92vw, 52svh, 520px); }
+}

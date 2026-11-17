@@ -1,579 +1,486 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="light">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anjani Malhotra — Data Analyst &amp; AI Builder</title>
-  <meta name="description" content="Data analyst and AI builder finishing MSc at Symbiosis School of Economics. 8 analytics and AI projects across finance, HR, sales, and operations." />
-
-  <!-- Google Fonts -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anjani Malhotra — AI Engineer &amp; Data Analyst</title>
+  <meta name="description" content="Anjani Malhotra, freelance AI engineer and data analyst. I find the real problem inside a business and build the smallest AI system that fixes it." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/animations.css" />
-  <link rel="stylesheet" href="css/responsive.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Host+Grotesk:wght@400;500;600;700;800&family=Geist+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="poses.css" />
+  <link rel="stylesheet" href="sections.css" />
 </head>
 <body>
+  <!-- floating pill nav -->
+  <header class="nav-wrap">
+    <nav class="nav" aria-label="Primary">
+      <a class="logo" href="#home" aria-label="Anjani — home">Anjani<span class="logo-spark" aria-hidden="true">✦</span></a>
+      <span class="nav-sep" aria-hidden="true"></span>
+      <ul class="nav-links">
+        <li><a href="#work">Work</a></li>
+        <li><a href="#services"><span class="dot" aria-hidden="true"></span>Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="icon-btn" type="button" aria-label="Toggle dark mode" id="themeToggle">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></svg>
+      </button>
+    </nav>
+  </header>
 
-  <!-- ============================================================
-       NAVBAR
-  ============================================================ -->
-  <nav class="navbar" role="navigation" aria-label="Main navigation">
-    <div class="container">
-      <div class="nav-inner">
-        <a href="#hero" class="nav-brand">Anjani Malhotra</a>
+  <main>
+    <!-- ======================= HERO ======================= -->
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="badge"><span aria-hidden="true">✧</span> AI Engineer × Data Analyst</p>
+        <h1>Hi, I'm <span class="name">Anjani</span>.</h1>
+        <p class="lede"><em>I build things,</em><br />and <strong>help you</strong> build yours.</p>
+        <p class="sub">I find the real problem inside a business, then build the smallest AI system that fixes it — without replacing what already works.</p>
+        <div class="actions">
+          <a class="btn-pill" href="#contact">Work with me <span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a class="text-link" href="#work">See my work <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
 
-        <ul class="nav-links">
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#experience">Work</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+      <div class="stage" id="stage">
+        <div class="poser" id="poser" role="img" aria-label="Anjani's character turns her head to look toward your cursor">
+          <img class="pose" data-pose="up-left" src="assets/poses/up-left.webp" alt="" draggable="false" />
+          <img class="pose" data-pose="up" src="assets/poses/up.webp" alt="" draggable="false" />
+          <img class="pose" data-pose="up-right" src="assets/poses/up-right.webp" alt="" draggable="false" />
+          <img class="pose" data-pose="left" src="assets/poses/left.webp" alt="" draggable="false" />
+          <img class="pose is-on" data-pose="center" src="assets/poses/center.webp" alt="" draggable="false" />
+          <img class="pose" data-pose="right" src="assets/poses/right.webp" alt="" draggable="false" />
+          <img class="pose" data-pose="down-left" src="assets/poses/down-left.webp" alt="" draggable="false" />
+          <img class="pose" data-pose="down" src="assets/poses/down.webp" alt="" draggable="false" />
+          <img class="pose" data-pose="down-right" src="assets/poses/down-right.webp" alt="" draggable="false" />
+        </div>
+      </div>
+
+      <aside class="hero-side" aria-label="Building right now">
+        <p class="side-label">— Building right now —</p>
+        <ul class="side-list">
+          <li>
+            <a href="#work"><span class="side-title">Contract Copilot</span><span class="side-meta">Latest build · Local AI</span></a>
+            <span class="live" aria-hidden="true"></span>
+          </li>
+          <li>
+            <a href="#services"><span class="side-title">Freelance AI Projects</span><span class="side-meta">Clients · Open</span></a>
+            <span class="live" aria-hidden="true"></span>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/aiwithanjani/" target="_blank" rel="noopener"><span class="side-title">@aiwithanjani</span><span class="side-meta">Instagram · New</span></a>
+            <span class="live" aria-hidden="true"></span>
+          </li>
         </ul>
+        <p class="hint"><span aria-hidden="true">↖</span> Move your cursor to say hi</p>
+      </aside>
+    </section>
 
-        <div class="nav-right">
-          <button id="theme-toggle" aria-label="Toggle dark mode"></button>
-          <button class="nav-hamburger" aria-label="Open menu">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-              <line x1="3" y1="6" x2="21" y2="6"/>
-              <line x1="3" y1="12" x2="21" y2="12"/>
-              <line x1="3" y1="18" x2="21" y2="18"/>
-            </svg>
-          </button>
+    <!-- ======================= STATS ======================= -->
+    <section class="section stats-wrap" aria-label="At a glance">
+      <ul class="stats reveal">
+        <li><span class="stat-num" data-count="8">8</span><span class="stat-label">AI &amp; analytics systems delivered for clients</span></li>
+        <li><span class="stat-num">#1</span><span class="stat-label">Payman AI Dev Challenge</span></li>
+        <li><span class="stat-num" data-count="20" data-suffix="+">20+</span><span class="stat-label">Open-source builds on GitHub</span></li>
+      </ul>
+    </section>
+
+    <!-- ======================= SHIPPED LOG ======================= -->
+    <section class="section" id="work">
+      <div class="section-head reveal">
+        <p class="eyebrow">01 · Proof of work</p>
+        <div class="head-row">
+          <h2>The shipped <em>log.</em></h2>
+          <div class="carousel-ctrl" aria-label="Scroll projects">
+            <a class="gh-link" href="https://github.com/AnjaniMalhotra?tab=repositories" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+              All projects on GitHub ↗
+            </a>
+            <button type="button" class="round-btn" data-scroll="-1" aria-label="Previous projects">←</button>
+            <button type="button" class="round-btn" data-scroll="1" aria-label="Next projects">→</button>
+          </div>
         </div>
-      </div>
-    </div>
-  </nav>
-
-  <!-- Mobile overlay nav -->
-  <div class="nav-mobile-overlay" role="dialog" aria-label="Mobile navigation">
-    <button class="nav-mobile-close" aria-label="Close menu">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <line x1="18" y1="6" x2="6" y2="18"/>
-        <line x1="6" y1="6" x2="18" y2="18"/>
-      </svg>
-    </button>
-    <a href="#hero">Home</a>
-    <a href="#experience">Work</a>
-    <a href="#projects">Projects</a>
-    <a href="#skills">Skills</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <!-- ============================================================
-       HERO
-  ============================================================ -->
-  <section id="hero">
-    <div class="hero-dot-grid" aria-hidden="true"></div>
-    <div class="hero-inner">
-      <div class="hero-availability">
-        <span class="dot" aria-hidden="true"></span>
-        Available for opportunities
+        <p class="section-intro">Things I've built end to end, mostly the forward-deployed way: a real business problem, a small AI system, and the tools the team already uses.</p>
       </div>
 
-      <h1 class="hero-name">Anjani Malhotra</h1>
-      <div class="hero-rule" aria-hidden="true"></div>
+      <div class="carousel" id="projects" tabindex="0" aria-label="Projects">
+        <article class="card project">
+          <div class="cover tone-rose"><span class="cover-num">01</span><span class="cover-tag">Legal AI · fully local</span><span class="cover-glyph" aria-hidden="true">§</span></div>
+          <div class="card-body">
+            <h3>PayNest Contract Copilot</h3>
+            <p>Reviews client contracts against company standards: a plain-English summary, chat with page citations, a 0–100 risk score and a lawyer's sign-off. Nothing leaves the machine.</p>
+            <ul class="chips"><li>Ollama</li><li>LangGraph</li><li>Chroma</li><li>FastAPI</li><li>Langfuse</li><li>Ragas</li></ul>
+            <div class="card-links">
+              <a href="https://anjanimalhotra.github.io/legal-docs-review/" target="_blank" rel="noopener">Presentation ↗</a>
+              <a href="https://github.com/AnjaniMalhotra/legal-docs-review" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
 
-      <p class="hero-subtitle">Data Analyst &amp; AI Builder</p>
-      <p class="hero-meta">MSc Economics (Data Analytics) &middot; Symbiosis School of Economics, Pune &middot; Currently at Earnest Data Analytics</p>
+        <article class="card project">
+          <div class="cover tone-sage"><span class="cover-num">02</span><span class="cover-tag">Healthcare · FDE</span><span class="cover-glyph" aria-hidden="true">+</span></div>
+          <div class="card-body">
+            <h3>Insurance settlements, without the retyping</h3>
+            <p>One new tab inside a hospital's existing billing system. AI reads settlement emails from six insurers, matches them to claims and flags unfair cuts, replacing about three days of retyping a month.</p>
+            <ul class="chips"><li>LLM extraction</li><li>Python</li><li>Email parsing</li><li>Reconciliation</li></ul>
+            <div class="card-links">
+              <a href="https://anjanimalhotra.github.io/Hospital-insurance-FDE/" target="_blank" rel="noopener">Slides ↗</a>
+              <a href="https://github.com/AnjaniMalhotra/Hospital-insurance-FDE" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
 
-      <div class="hero-achievements">
-        <span class="achievement-pill">&#x1F3C6; 1st Place &mdash; Payman AI Dev Challenge</span>
-        <span class="achievement-pill">&#x2B50; Semester III Rank 1 &middot; CGPA 9.2</span>
-      </div>
+        <article class="card project">
+          <div class="cover tone-sand"><span class="cover-num">03</span><span class="cover-tag">Sales · email AI</span><span class="cover-glyph" aria-hidden="true">@</span></div>
+          <div class="card-body">
+            <h3>Business Lead Inbox</h3>
+            <p>Routes business email, grades sales leads A–D, puts hot leads first and drafts replies with an LLM. Built to be safe in public: read-only Gmail and per-session data.</p>
+            <ul class="chips"><li>Python</li><li>Streamlit</li><li>LLMs</li><li>IMAP</li></ul>
+            <div class="card-links">
+              <a href="https://github.com/AnjaniMalhotra/JEV-Business-Leads-Inbox" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
 
-      <div class="hero-ctas">
-        <a href="#projects" class="btn-primary">View My Work</a>
-        <a href="assets/Anjani_Malhotra.pdf" class="btn-outline" download>
-          Download Resume
-          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
-            <polyline points="7 10 12 15 17 10"/>
-            <line x1="12" y1="15" x2="12" y2="3"/>
-          </svg>
+        <article class="card project">
+          <div class="cover tone-lilac"><span class="cover-num">04</span><span class="cover-tag">Win · 1st place</span><span class="cover-glyph" aria-hidden="true">★</span></div>
+          <div class="card-body">
+            <h3>Auto Restock Agent</h3>
+            <p>Winner of the Payman AI Dev Challenge. Spots low stock, works out what to reorder and pays vendors through Payman from a plain-English prompt, with a safety stop-loss on every purchase.</p>
+            <ul class="chips"><li>AI agent</li><li>Payman SDK</li><li>Streamlit</li></ul>
+            <div class="card-links">
+              <a href="https://auto-restock-agent.streamlit.app/" target="_blank" rel="noopener">Live app ↗</a>
+              <a href="https://github.com/AnjaniMalhotra/auto-restock-agent" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="cover tone-sky"><span class="cover-num">05</span><span class="cover-tag">Cloud · automation</span><span class="cover-glyph" aria-hidden="true">✉</span></div>
+          <div class="card-body">
+            <h3>News Digest Bot</h3>
+            <p>Fetches the day's headlines, summarises them with Gemini and sends a digest to Telegram. Built in three stages: deploy, automate with event triggers, then observe in production.</p>
+            <ul class="chips"><li>Gemini</li><li>Docker</li><li>Cloud Run</li><li>Pub/Sub</li></ul>
+            <div class="card-links">
+              <a href="https://github.com/AnjaniMalhotra/news-digest-bot" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="cover tone-rose"><span class="cover-num">06</span><span class="cover-tag">Text-to-SQL</span><span class="cover-glyph" aria-hidden="true">⌘</span></div>
+          <div class="card-body">
+            <h3>SQL Data Retriever</h3>
+            <p>Ask a database questions in plain English. Gemini writes the SQL, runs it and returns a table you can download, with a full history of every query.</p>
+            <ul class="chips"><li>Gemini</li><li>SQLite</li><li>Streamlit</li></ul>
+            <div class="card-links">
+              <a href="https://sql-data-retriever.streamlit.app" target="_blank" rel="noopener">Live app ↗</a>
+              <a href="https://github.com/AnjaniMalhotra/SQL-Data-Retriever" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="cover tone-sage"><span class="cover-num">07</span><span class="cover-tag">Logistics · cloud</span><span class="cover-glyph" aria-hidden="true">↯</span></div>
+          <div class="card-body">
+            <h3>Northstar Freight portal</h3>
+            <p>A freight brokerage portal for shippers, staff and carriers: the "before" system of an FDE capstone, ready for an AI copilot to be added on top. Deploys to Google Cloud in one command.</p>
+            <ul class="chips"><li>Postgres</li><li>Cloud Run</li><li>Terraform</li><li>Docker</li></ul>
+            <div class="card-links">
+              <a href="https://github.com/AnjaniMalhotra/FDE-northstar-legacy-system" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="cover tone-sand"><span class="cover-num">08</span><span class="cover-tag">AutoML · XAI</span><span class="cover-glyph" aria-hidden="true">?</span></div>
+          <div class="card-body">
+            <h3>ML Who?</h3>
+            <p>Automated data analysis, visualisation and machine learning in one Streamlit app, with feature engineering, explainable AI and end-to-end model evaluation.</p>
+            <ul class="chips"><li>Python</li><li>scikit-learn</li><li>XAI</li><li>Streamlit</li></ul>
+            <div class="card-links">
+              <a href="https://github.com/AnjaniMalhotra/ML-Who-" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project">
+          <div class="cover tone-lilac"><span class="cover-num">09</span><span class="cover-tag">Retail · billing</span><span class="cover-glyph" aria-hidden="true">₹</span></div>
+          <div class="card-body">
+            <h3>The Golden Affair</h3>
+            <p>A counter app for an exhibition: one-tap billing, a cash drawer that suggests change, sales history with product photos, stock editing and profit reports.</p>
+            <ul class="chips"><li>Streamlit</li><li>Postgres</li><li>Supabase</li></ul>
+            <div class="card-links">
+              <a href="https://github.com/AnjaniMalhotra/the-golden-affair" target="_blank" rel="noopener">Code ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <a class="card card-all" href="https://github.com/AnjaniMalhotra?tab=repositories" target="_blank" rel="noopener">
+          <span class="card-all-num">20+</span>
+          <span class="card-all-title">See everything I've built</span>
+          <span class="card-all-sub">Every project, notebook and experiment is open on GitHub.</span>
+          <span class="card-all-cta">Browse my GitHub <span aria-hidden="true">↗</span></span>
         </a>
       </div>
-    </div>
 
-    <div class="hero-scroll-indicator" aria-hidden="true">
-      scroll
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round">
-        <polyline points="6 9 12 15 18 9"/>
-      </svg>
-    </div>
-  </section>
+      <p class="more-work reveal">Earlier work:
+        <a href="https://github.com/AnjaniMalhotra/Delhi_AQI_Analysis" target="_blank" rel="noopener">Delhi AQI analysis</a> ·
+        <a href="https://github.com/AnjaniMalhotra/Maximising-Taxi-Revenue-Project" target="_blank" rel="noopener">Maximising taxi revenue</a> ·
+        <a href="https://github.com/AnjaniMalhotra/Attendence" target="_blank" rel="noopener">Smart attendance system</a> ·
+        <a href="https://github.com/AnjaniMalhotra?tab=repositories" target="_blank" rel="noopener">All repositories ↗</a>
+      </p>
+    </section>
 
-  <!-- ============================================================
-       ABOUT
-  ============================================================ -->
-  <section id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div class="about-bio reveal">
-          I'm a data analyst and AI builder finishing my MSc at Symbiosis School of Economics. I've delivered 8 analytics and AI systems across finance, HR, sales, and operations &mdash; working with NLP, forecasting, RAG pipelines, and LLM integrations. I build things that solve real business problems.
-        </div>
-        <div class="about-stats">
-          <div class="stat-item reveal reveal-delay-1">
-            <div class="stat-value">8</div>
-            <div class="stat-label">Projects Delivered</div>
-          </div>
-          <div class="stat-item reveal reveal-delay-2">
-            <div class="stat-value">9.2</div>
-            <div class="stat-label">MSc CGPA</div>
-          </div>
-          <div class="stat-item reveal reveal-delay-1">
-            <div class="stat-value">RAG &middot; NLP &middot; ML</div>
-            <div class="stat-label">Core Domains</div>
-          </div>
-          <div class="stat-item reveal reveal-delay-2">
-            <div class="stat-value">#1</div>
-            <div class="stat-label">Payman AI Challenge</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       EXPERIENCE
-  ============================================================ -->
-  <section id="experience">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Experience</h2>
+    <!-- ======================= CLIENT WORK ======================= -->
+    <section class="section" id="client-work">
+      <div class="section-head reveal">
+        <p class="eyebrow">02 · Client work</p>
+        <h2>Built for <em>real teams.</em></h2>
+        <p class="section-intro">Systems delivered across finance, HR, sales, procurement and customer support. Client details stay confidential.</p>
       </div>
 
-      <div class="timeline">
+      <div class="cases">
+        <article class="case reveal">
+          <p class="case-tag">Voice AI · RAG</p>
+          <h3>Priya, a multilingual voice agent</h3>
+          <p>Answers spoken customer questions in Hindi, Marathi and Tamil in under a second, using speech recognition and synthesis, vector search and an LLM.</p>
+          <ul class="chips"><li>Bhashini STT/TTS</li><li>ChromaDB</li><li>RAG</li><li>LLMs</li></ul>
+        </article>
+        <article class="case reveal">
+          <p class="case-tag">NLP · People analytics</p>
+          <h3>HR sentiment analysis</h3>
+          <p>A fine-tuned DistilBERT model reads thousands of open survey answers with an F1 score of 89.7%, and a dashboard flags clusters of concern automatically.</p>
+          <ul class="chips"><li>DistilBERT</li><li>PyTorch</li><li>Hugging Face</li></ul>
+        </article>
+        <article class="case reveal">
+          <p class="case-tag">Optimisation</p>
+          <h3>Scheme optimisation engine</h3>
+          <p>Linear programming that allocates discounts and incentives across 12 sets of constraints, fed straight from SQL.</p>
+          <ul class="chips"><li>SciPy (HiGHS)</li><li>Linear programming</li><li>SQL</li></ul>
+        </article>
+        <article class="case reveal">
+          <p class="case-tag">Forecasting</p>
+          <h3>Sales forecasting &amp; ROI</h3>
+          <p>Sales forecasts and return-on-investment models that guide where the budget goes next.</p>
+          <ul class="chips"><li>SARIMA</li><li>Random Forest</li><li>SciPy</li></ul>
+        </article>
+        <article class="case reveal">
+          <p class="case-tag">Data engineering</p>
+          <h3>One dataset from six tools</h3>
+          <p>A Python pipeline that pulls six SaaS platforms into a single, analysis-ready dataset.</p>
+          <ul class="chips"><li>Python</li><li>APIs</li><li>SQL</li></ul>
+        </article>
+        <article class="case reveal">
+          <p class="case-tag">Finance · fraud</p>
+          <h3>Expense management</h3>
+          <p>Expense tracking with fraud detection, reported through Power BI.</p>
+          <ul class="chips"><li>Python</li><li>Fraud detection</li><li>Power BI</li></ul>
+        </article>
+      </div>
+    </section>
 
-        <!-- Earnest Data Analytics -->
-        <div class="timeline-entry reveal">
-          <div class="timeline-left" aria-hidden="true">
-            <div class="timeline-dot"></div>
-            <div class="timeline-line"></div>
+    <!-- ======================= SERVICES ======================= -->
+    <section class="section" id="services">
+      <div class="section-head reveal">
+        <p class="eyebrow">03 · Services</p>
+        <h2>What I can build <em>for you.</em></h2>
+        <p class="section-intro">I'm freelancing now. Bring me a slow, manual or messy part of your business and I'll build the smallest system that fixes it, inside the tools your team already uses.</p>
+      </div>
+
+      <div class="services">
+        <article class="service reveal">
+          <span class="service-icon" aria-hidden="true">◎</span>
+          <h3>AI agents &amp; copilots</h3>
+          <p>Assistants that read email, documents and data, draft the next step and hand it to a human to approve.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service-icon" aria-hidden="true">◉</span>
+          <h3>Voice AI</h3>
+          <p>Multilingual voice agents that answer customers in Indian languages, grounded in your own knowledge base.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service-icon" aria-hidden="true">▤</span>
+          <h3>Document intelligence</h3>
+          <p>RAG systems with citations, risk scoring and private, on-premise models when the data can't leave.</p>
+        </article>
+        <article class="service reveal">
+          <span class="service-icon" aria-hidden="true">◢</span>
+          <h3>Analytics &amp; forecasting</h3>
+          <p>Dashboards, forecasts and optimisation models that turn scattered data into decisions.</p>
+        </article>
+      </div>
+
+      <ol class="process reveal" aria-label="How I work">
+        <li><span>01</span>Find the real problem</li>
+        <li><span>02</span>Build the smallest fix</li>
+        <li><span>03</span>Ship it inside your tools</li>
+        <li><span>04</span>Measure and improve</li>
+      </ol>
+    </section>
+
+    <!-- ======================= EXPERIENCE ======================= -->
+    <section class="section" id="experience">
+      <div class="section-head reveal">
+        <p class="eyebrow">04 · Experience</p>
+        <h2>Where I've <em>worked.</em></h2>
+      </div>
+
+      <ol class="timeline">
+        <li class="job reveal">
+          <div class="job-when"><span class="now-dot" aria-hidden="true"></span>Now</div>
+          <div class="job-body">
+            <h3>Freelance AI Engineer &amp; Data Analyst</h3>
+            <p class="job-where">Independent · Remote</p>
+            <p>Building AI systems for businesses the forward-deployed way, and sharing what I learn on Instagram at <a href="https://www.instagram.com/aiwithanjani/" target="_blank" rel="noopener">@aiwithanjani</a>.</p>
           </div>
-          <div class="timeline-content">
-            <p class="timeline-period">Dec 2025 &ndash; Jun 2026</p>
-            <h3 class="timeline-role">Data Analytics Intern</h3>
-            <p class="timeline-company">Earnest Data Analytics</p>
-            <p class="timeline-location">Pune, India &middot; Hybrid</p>
-            <ul class="timeline-bullets">
-              <li>Built 8 analytics and AI solutions across Finance, HR, Sales, Procurement, Commercial, and Customer domains.</li>
-              <li>Developed a Python data integration pipeline consolidating 6 SaaS platforms into a unified analytics dataset.</li>
-              <li>Built sales forecasting and ROI optimisation models using SARIMA, Random Forest, and SciPy.</li>
-              <li>Created a Scheme Optimisation Tool with linear programming for discount and incentive automation.</li>
-              <li>Designed an HR Sentiment Analysis system using DistilBERT and NLP techniques.</li>
-              <li>Built an Expense Management System with fraud detection and Power BI reporting.</li>
-              <li>Developed multilingual AI Voice Agent "Priya" using RAG, ChromaDB, Bhashini APIs, and LLMs.</li>
+        </li>
+        <li class="job reveal">
+          <div class="job-when">Dec 2025 – Jun 2026</div>
+          <div class="job-body">
+            <h3>Data Analytics Intern</h3>
+            <p class="job-where">Earnest Data Analytics · Pune · Hybrid</p>
+            <ul>
+              <li>Delivered 8 analytics and AI solutions across finance, HR, sales, procurement, commercial and customer teams.</li>
+              <li>Built the multilingual voice agent "Priya" with RAG, ChromaDB, Bhashini and LLMs.</li>
+              <li>Built forecasting, ROI and linear-programming tools, an HR sentiment model and a fraud-aware expense system.</li>
             </ul>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">SQL</span>
-              <span class="tech-tag">DistilBERT</span>
-              <span class="tech-tag">RAG</span>
-              <span class="tech-tag">ChromaDB</span>
-              <span class="tech-tag">Power BI</span>
-              <span class="tech-tag">SARIMA</span>
-              <span class="tech-tag">LLMs</span>
-            </div>
           </div>
-        </div>
-
-        <!-- Edulyt -->
-        <div class="timeline-entry reveal">
-          <div class="timeline-left" aria-hidden="true">
-            <div class="timeline-dot"></div>
-            <div class="timeline-line"></div>
-          </div>
-          <div class="timeline-content">
-            <p class="timeline-period">May 2025 &ndash; Jul 2025</p>
-            <h3 class="timeline-role">Data Analytics Intern</h3>
-            <p class="timeline-company">Edulyt India</p>
-            <p class="timeline-location">Delhi, India &middot; Remote</p>
-            <ul class="timeline-bullets">
-              <li>Built Power BI dashboards for credit card transaction analysis and spending trend visualisation.</li>
-              <li>Performed customer behaviour and product return analysis using Python, identifying trends across products, regions, and payment methods.</li>
+        </li>
+        <li class="job reveal">
+          <div class="job-when">May – Jul 2025</div>
+          <div class="job-body">
+            <h3>Data Analytics Intern</h3>
+            <p class="job-where">Edulyt India · Delhi · Remote</p>
+            <ul>
+              <li>Built Power BI dashboards for credit card transactions and spending trends.</li>
+              <li>Analysed customer behaviour and product returns across products, regions and payment methods.</li>
             </ul>
-            <div class="tech-tags">
-              <span class="tech-tag">Power BI</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">DAX</span>
-              <span class="tech-tag">Pandas</span>
-            </div>
           </div>
-        </div>
-
-        <!-- Margin Sentiment Advisory -->
-        <div class="timeline-entry reveal">
-          <div class="timeline-left" aria-hidden="true">
-            <div class="timeline-dot"></div>
-            <div class="timeline-line"></div>
-          </div>
-          <div class="timeline-content">
-            <p class="timeline-period">Feb 2024 &ndash; Apr 2024</p>
-            <h3 class="timeline-role">Financial Analyst Intern</h3>
-            <p class="timeline-company">Margin Sentiment Advisory</p>
-            <p class="timeline-location">Delhi, India</p>
-            <ul class="timeline-bullets">
-              <li>Tracked sectoral index fluctuations and compiled IPO growth profiles.</li>
-              <li>Applied mathematical models to forecast sectoral trends and historical benchmarks.</li>
-              <li>Assisted advisory panels in compiling macroeconomic research briefs.</li>
+        </li>
+        <li class="job reveal">
+          <div class="job-when">Feb – Apr 2024</div>
+          <div class="job-body">
+            <h3>Financial Analyst Intern</h3>
+            <p class="job-where">Margin Sentiment Advisory · Delhi</p>
+            <ul>
+              <li>Tracked sector indices, built IPO growth profiles and forecast sector trends.</li>
+              <li>Helped compile macroeconomic research briefs for advisory panels.</li>
             </ul>
-            <div class="tech-tags">
-              <span class="tech-tag">Financial Analysis</span>
-              <span class="tech-tag">IPO Modeling</span>
-              <span class="tech-tag">Quantitative Analytics</span>
-            </div>
           </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- ======================= SKILLS + EDUCATION ======================= -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <p class="eyebrow">05 · Toolkit</p>
+        <h2>What I work <em>with.</em></h2>
+      </div>
+
+      <div class="skills">
+        <div class="skill-group reveal">
+          <h3>AI &amp; LLMs</h3>
+          <ul class="chips big"><li>LangGraph</li><li>RAG</li><li>ChromaDB</li><li>Ollama</li><li>Gemini</li><li>Ragas</li><li>Langfuse</li><li>Voice AI (STT/TTS)</li><li>Prompt engineering</li></ul>
         </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       PROJECTS
-  ============================================================ -->
-  <section id="projects">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Projects</h2>
-        <p class="section-subtitle">Selected work from my internship and personal builds.</p>
-      </div>
-
-      <div class="project-tabs" role="tablist">
-        <button class="tab-btn active" data-tab="tab-professional" role="tab" aria-selected="true">Professional Work</button>
-        <button class="tab-btn" data-tab="tab-personal" role="tab" aria-selected="false">Personal Projects</button>
-      </div>
-
-      <!-- Professional -->
-      <div class="tab-panel active" id="tab-professional" role="tabpanel">
-        <div class="pro-projects">
-
-          <div class="pro-card reveal">
-            <div class="pro-card-header">
-              <span class="pro-card-category">Voice AI / RAG</span>
-              <span class="confidential-badge">Confidential</span>
-            </div>
-            <h3 class="pro-card-title">Priya &mdash; Multilingual AI Voice Agent</h3>
-            <div class="pro-card-divider"></div>
-            <div class="pro-card-body">
-              <div class="pro-card-row">
-                <span class="pro-card-label">Problem</span>
-                <span class="pro-card-text">Corporate customer support faced friction processing spoken queries in regional dialects, causing operational lag.</span>
-              </div>
-              <div class="pro-card-row">
-                <span class="pro-card-label">Solution</span>
-                <span class="pro-card-text">Built an autonomous multilingual voice pipeline using Bhashini APIs for speech recognition and synthesis, ChromaDB for vector search, and a RAG-based LLM pipeline to answer queries in sub-second latency across Hindi, Marathi, and Tamil.</span>
-              </div>
-              <div class="pro-card-row">
-                <span class="pro-card-label">My Role</span>
-                <span class="pro-card-text">Designed conversation state orchestration, optimised ChromaDB chunk queries, and integrated STT/TTS adapters.</span>
-              </div>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">ChromaDB</span>
-              <span class="tech-tag">Bhashini APIs</span>
-              <span class="tech-tag">RAG</span>
-              <span class="tech-tag">DistilBERT</span>
-              <span class="tech-tag">LLMs</span>
-            </div>
-          </div>
-
-          <div class="pro-card reveal">
-            <div class="pro-card-header">
-              <span class="pro-card-category">NLP / Text Classification</span>
-              <span class="confidential-badge">Confidential</span>
-            </div>
-            <h3 class="pro-card-title">HR Sentiment Analysis Platform</h3>
-            <div class="pro-card-divider"></div>
-            <div class="pro-card-body">
-              <div class="pro-card-row">
-                <span class="pro-card-label">Problem</span>
-                <span class="pro-card-text">HR teams receive thousands of open-ended survey responses; manual analysis is cost-prohibitive and concerns go unnoticed.</span>
-              </div>
-              <div class="pro-card-row">
-                <span class="pro-card-label">Solution</span>
-                <span class="pro-card-text">Fine-tuned a DistilBERT transformer for sentiment classification on organisational feedback, achieving an F1-score of 89.7%. Output feeds a dashboard that flags concern clusters automatically.</span>
-              </div>
-              <div class="pro-card-row">
-                <span class="pro-card-label">My Role</span>
-                <span class="pro-card-text">Optimised PyTorch tokenizer scripts, handled high-volume dataset cleaning, and organised emotion density cluster maps.</span>
-              </div>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">DistilBERT</span>
-              <span class="tech-tag">Hugging Face</span>
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">Pandas</span>
-              <span class="tech-tag">PyTorch</span>
-            </div>
-          </div>
-
-          <div class="pro-card reveal">
-            <div class="pro-card-header">
-              <span class="pro-card-category">Operations Research / Linear Programming</span>
-              <span class="confidential-badge">Confidential</span>
-            </div>
-            <h3 class="pro-card-title">Scheme Optimisation Engine</h3>
-            <div class="pro-card-divider"></div>
-            <div class="pro-card-body">
-              <div class="pro-card-row">
-                <span class="pro-card-label">Problem</span>
-                <span class="pro-card-text">Enterprise incentive schemes required optimal resource allocation under complex multi-variable constraints; manual scheduling produced sub-optimal overhead distribution.</span>
-              </div>
-              <div class="pro-card-row">
-                <span class="pro-card-label">Solution</span>
-                <span class="pro-card-text">Formulated a linear programming system using SciPy's HiGHS solver to minimise overhead allocation across 12 constraint vectors, integrated with SQL data adapters.</span>
-              </div>
-              <div class="pro-card-row">
-                <span class="pro-card-label">My Role</span>
-                <span class="pro-card-text">Formulated objective functions and constraint matrices; built SQL-to-matrix data adapters.</span>
-              </div>
-            </div>
-            <div class="tech-tags">
-              <span class="tech-tag">Python</span>
-              <span class="tech-tag">SciPy</span>
-              <span class="tech-tag">Linear Programming</span>
-              <span class="tech-tag">SQL</span>
-            </div>
-          </div>
-
+        <div class="skill-group reveal">
+          <h3>Machine learning</h3>
+          <ul class="chips big"><li>DistilBERT &amp; transformers</li><li>BGE-M3</li><li>Random Forest</li><li>SARIMA</li><li>Clustering</li><li>Explainable ML</li><li>Linear programming</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Data &amp; cloud</h3>
+          <ul class="chips big"><li>Python</li><li>SQL</li><li>Postgres</li><li>FastAPI</li><li>Docker</li><li>Google Cloud</li><li>Terraform</li><li>Spark</li></ul>
+        </div>
+        <div class="skill-group reveal">
+          <h3>Analytics</h3>
+          <ul class="chips big"><li>Power BI</li><li>Tableau</li><li>Streamlit</li><li>R</li><li>Excel</li><li>Econometrics</li><li>Statistical modelling</li></ul>
         </div>
       </div>
 
-      <!-- Personal -->
-      <div class="tab-panel" id="tab-personal" role="tabpanel">
-        <div class="personal-projects">
-
-          <div class="pers-card reveal">
-            <img src="assets/auto_restock.jpg" alt="Auto Restock project" class="pers-card-img" loading="lazy" />
-            <div class="pers-card-body">
-              <h3 class="pers-card-title">Auto Restock &mdash; AI Inventory Automation</h3>
-              <p class="pers-card-desc">AI-powered inventory management platform that automates restock decisions using demand forecasting and supplier APIs. Won 1st Place at the Payman AI Dev Challenge.</p>
-              <div class="pers-card-footer">
-                <div class="tech-tags">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">LLMs</span>
-                  <span class="tech-tag">Payman AI</span>
-                </div>
-              </div>
-            </div>
+      <div class="edu reveal">
+        <p class="eyebrow">Education</p>
+        <div class="edu-grid">
+          <div class="edu-item">
+            <h3>MSc Economics (Data Analytics)</h3>
+            <p>Symbiosis School of Economics, Pune</p>
+            <p class="edu-note">CGPA 9.2 · Rank 1 in Semester III</p>
           </div>
-
-          <div class="pers-card reveal">
-            <img src="assets/ai_job_market.jpg" alt="AI Job Market Analysis" class="pers-card-img" loading="lazy" />
-            <div class="pers-card-body">
-              <h3 class="pers-card-title">AI Job Market Analysis</h3>
-              <p class="pers-card-desc">Exploratory analysis of global AI hiring trends, skill demand shifts, and salary distributions across roles and geographies.</p>
-              <div class="pers-card-footer">
-                <div class="tech-tags">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Pandas</span>
-                  <span class="tech-tag">Tableau</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pers-card reveal">
-            <img src="assets/taxi_revenue.jpg" alt="Taxi Revenue Forecasting" class="pers-card-img" loading="lazy" />
-            <div class="pers-card-body">
-              <h3 class="pers-card-title">Taxi Revenue Forecasting</h3>
-              <p class="pers-card-desc">Time-series revenue forecasting model for urban taxi operations using NYC trip data, incorporating weather and event variables.</p>
-              <div class="pers-card-footer">
-                <div class="tech-tags">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">SARIMA</span>
-                  <span class="tech-tag">Scikit-learn</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pers-card reveal">
-            <img src="assets/upi_project.jpg" alt="UPI Transaction Analysis" class="pers-card-img" loading="lazy" />
-            <div class="pers-card-body">
-              <h3 class="pers-card-title">UPI Transaction Analysis</h3>
-              <p class="pers-card-desc">Analysed UPI payment transaction data to surface usage patterns, peak periods, and demographic spending behaviour across categories.</p>
-              <div class="pers-card-footer">
-                <div class="tech-tags">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Power BI</span>
-                  <span class="tech-tag">Pandas</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="pers-card reveal">
-            <img src="assets/global cities.png" alt="Global Cities Economic Analysis" class="pers-card-img" loading="lazy" />
-            <div class="pers-card-body">
-              <h3 class="pers-card-title">Global Cities Economic Analysis</h3>
-              <p class="pers-card-desc">Cross-city economic comparison covering GDP, cost of living, workforce composition, and urban productivity indicators.</p>
-              <div class="pers-card-footer">
-                <div class="tech-tags">
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">R</span>
-                  <span class="tech-tag">Tableau</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- ============================================================
-       SKILLS
-  ============================================================ -->
-  <section id="skills">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Skills</h2>
-      </div>
-      <div class="skills-grid">
-
-        <div class="reveal">
-          <h3 class="skill-col-title">Languages &amp; Tools</h3>
-          <div class="skill-pills">
-            <span class="skill-pill">Python</span>
-            <span class="skill-pill">SQL</span>
-            <span class="skill-pill">R</span>
-            <span class="skill-pill">Power BI</span>
-            <span class="skill-pill">Tableau</span>
-            <span class="skill-pill">Excel</span>
-            <span class="skill-pill">Streamlit</span>
+          <div class="edu-item">
+            <h3>BA Economics &amp; English</h3>
+            <p>University of Delhi</p>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div class="reveal reveal-delay-1">
-          <h3 class="skill-col-title">AI &amp; Machine Learning</h3>
-          <div class="skill-pills">
-            <span class="skill-pill">Regression &amp; Random Forest</span>
-            <span class="skill-pill">SARIMA</span>
-            <span class="skill-pill">Clustering</span>
-            <span class="skill-pill">NLP &amp; Transformers</span>
-            <span class="skill-pill">DistilBERT</span>
-            <span class="skill-pill">BGE-M3</span>
-            <span class="skill-pill">RAG Pipelines</span>
-            <span class="skill-pill">ChromaDB</span>
-            <span class="skill-pill">LLM Integration</span>
-            <span class="skill-pill">Voice AI (STT/TTS)</span>
-            <span class="skill-pill">Prompt Engineering</span>
-          </div>
+    <!-- ======================= CONTACT ======================= -->
+    <section class="section contact" id="contact">
+      <div class="contact-card reveal">
+        <p class="eyebrow">06 · Let's talk</p>
+        <h2>Let's build it <em>together.</em></h2>
+        <p class="section-intro">Have a process that eats your team's time, or an AI idea you want shipped? Tell me about it. I usually reply within a day.</p>
+        <div class="contact-actions">
+          <a class="btn-pill" href="mailto:anjanimalhotra09@gmail.com">anjanimalhotra09@gmail.com <span class="btn-arrow" aria-hidden="true">→</span></a>
+          <a class="btn-ghost" href="#" id="resumeLink" aria-disabled="true" title="Resume coming soon">Download resume</a>
         </div>
 
-        <div class="reveal reveal-delay-2">
-          <h3 class="skill-col-title">Data &amp; Analytics</h3>
-          <div class="skill-pills">
-            <span class="skill-pill">Econometrics</span>
-            <span class="skill-pill">Statistical Modelling</span>
-            <span class="skill-pill">Data Integration Pipelines</span>
-            <span class="skill-pill">Fraud Detection</span>
-            <span class="skill-pill">Dashboard Design</span>
-            <span class="skill-pill">Hadoop &amp; Spark</span>
-          </div>
-        </div>
-
+        <ul class="connect">
+          <li>
+            <a href="https://www.instagram.com/aiwithanjani/" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" class="fill"/></svg>
+              <span><strong>Instagram</strong><em>@aiwithanjani</em></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/anjani-malhotra" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+              <span><strong>LinkedIn</strong><em>anjani-malhotra</em></span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/AnjaniMalhotra" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.3-4-2-6-2.5m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.3 4.3 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12 12 0 0 0-6.2 0C6.5 2.8 5.4 3.1 5.4 3.1a4.3 4.3 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+              <span><strong>GitHub</strong><em>AnjaniMalhotra</em></span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:anjanimalhotra09@gmail.com">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+              <span><strong>Email</strong><em>anjanimalhotra09@gmail.com</em></span>
+            </a>
+          </li>
+        </ul>
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
-  <!-- ============================================================
-       EDUCATION
-  ============================================================ -->
-  <section id="education">
-    <div class="container">
-      <div class="section-header reveal">
-        <h2 class="section-title">Education</h2>
-      </div>
-      <div class="edu-entries">
-
-        <div class="edu-row reveal">
-          <div>
-            <p class="edu-degree">M.Sc. Economics (Data Analytics)</p>
-            <p class="edu-school">Symbiosis School of Economics, Pune</p>
-          </div>
-          <div class="edu-meta">
-            <span class="edu-year">Expected 2026</span>
-            <span class="edu-cgpa">CGPA 9.2 &middot; Semester III Rank 1</span>
-          </div>
-        </div>
-
-        <div class="edu-row reveal">
-          <div>
-            <p class="edu-degree">B.A. Economics &amp; English</p>
-            <p class="edu-school">University of Delhi</p>
-          </div>
-          <div class="edu-meta">
-            <span class="edu-year">Graduated 2023</span>
-            <span class="edu-cgpa">CGPA 7.4</span>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       CONTACT
-  ============================================================ -->
-  <section id="contact">
-    <div class="container">
-      <h2 class="contact-headline reveal">Let's connect.</h2>
-      <p class="contact-subtext reveal">I'm open to analytics, AI, and data science roles and collaborations.</p>
-
-      <div class="contact-links reveal">
-
-        <a href="mailto:anjanimalhotra09@gmail.com" class="contact-link" aria-label="Email Anjani">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="4" width="20" height="16" rx="2"/>
-            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
-          </svg>
-          anjanimalhotra09@gmail.com
-        </a>
-
-        <span class="contact-separator" aria-hidden="true"></span>
-
-        <a href="https://linkedin.com/in/anjani-malhotra" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/>
-            <circle cx="4" cy="4" r="2"/>
-          </svg>
-          LinkedIn
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
-        </a>
-
-        <span class="contact-separator" aria-hidden="true"></span>
-
-        <a href="https://github.com/AnjaniMalhotra" class="contact-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
-          </svg>
-          GitHub
-          <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M7 17L17 7M7 7h10v10"/></svg>
-        </a>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
-       FOOTER
-  ============================================================ -->
-  <footer>
-    <div class="container">
-      <p>&copy; 2026 Anjani Malhotra &middot; anjanimalhotra.github.io</p>
-    </div>
+  <footer class="footer">
+    <p>© Anjani Malhotra · AI Engineer &amp; Data Analyst</p>
+    <nav aria-label="Footer">
+      <a href="https://www.instagram.com/aiwithanjani/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.linkedin.com/in/anjani-malhotra" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/AnjaniMalhotra" target="_blank" rel="noopener">GitHub</a>
+      <a href="#home">Back to top ↑</a>
+    </nav>
   </footer>
 
-  <script src="js/main.js"></script>
+  <script src="poses.js"></script>
+  <script src="site.js"></script>
+  <script>
+    // light/dark toggle (remembered per browser)
+    (() => {
+      const root = document.documentElement, btn = document.getElementById('themeToggle');
+      try { const t = localStorage.getItem('theme'); if (t) root.dataset.theme = t; } catch (e) {}
+      btn.addEventListener('click', () => {
+        const next = root.dataset.theme === 'dark' ? 'light' : 'dark';
+        root.dataset.theme = next;
+        try { localStorage.setItem('theme', next); } catch (e) {}
+      });
+    })();
+  </script>
 </body>
 </html>
